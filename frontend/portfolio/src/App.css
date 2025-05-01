@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'koulen';
+    src: url('./fonts/koulen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'AD';
+    src: url('./fonts/AD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+/*   
+@theme {
+    --font-koulen: 'koulen', sans-serif;
+  } */
+
+  .koulen-font {
+    font-family: 'koulen', sans-serif;
+  }
+  .AD-font {
+    font-family: 'AD', sans-serif;
+  }
+  
+  
+
+nav {
+    background-image: url('./assets/navbackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-right-container{
+    background-image: url('./assets/herobackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about{
+    background-image: url('./assets/squrebackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.education{
+    background-image: url('./assets/timelinebackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

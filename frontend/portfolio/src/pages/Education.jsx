@@ -1,0 +1,83 @@
+import React from 'react'
+import { BiSolidLeftArrow, BiSolidRightArrow } from "react-icons/bi";
+import textline from '../assets/textline.png'
+import pinlogo from '../assets/pinlogo.png'
+
+
+function Education() {
+    return (
+        <div className='relative w-full'>
+            <div className='relative mb-[40px]'>
+                <h1 className='relative text-[50px] max-sm:text-[60px] koulen-font'>EDUCATION
+                    <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[20px]' src={textline} alt="" />
+                </h1>
+            </div>
+            <div className=' relative education  w-full h-[600px] p-[20px] border-[2px] rounded-[50px] border-b-[20px] max-lg:h-[800px]'>
+                <img className='absolute right-0 top-0 max-lg:h-[80px]' src={pinlogo} alt="" />
+                <div className='relative top-[50px] left-[50%] h-[500px] w-[3px] bg-black max-lg:left-[5%] max-lg:h-[650px]'>
+
+                    <div className='absolute h-[20px] w-[20px] bg-black rounded-full top-[85px] left-[-8.5px] max-lg:top-[120px]'></div>
+                    <div className='absolute h-[40px] w-[40px] border-[1px] border-black rounded-full top-[74.5px] left-[-18.5px] max-lg:top-[110px]'></div>
+
+                    <div className='absolute h-[20px] w-[20px] bg-black rounded-full top-[210px] left-[-8.5px] max-lg:top-[315px]'></div>
+                    <div className='absolute h-[40px] w-[40px] border-[1px] border-black rounded-full top-[200px] left-[-18.5px] max-lg:top-[305px]'></div>
+
+                    <div className='absolute h-[20px] w-[20px] bg-black rounded-full bottom-[110px] left-[-8.5px] max-lg:bottom-[120px]'></div>
+                    <div className='absolute h-[40px] w-[40px] border-[1px] border-black rounded-full bottom-[100px] left-[-18.5px] max-lg:bottom-[110px]'></div>
+
+                    <div className=' flex gap-x-[20px] justify-between p-[10px] absolute top-[20px] right-[-350px] border-[1.5px] border-r-[5px] w-fit h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-lg:top-[55px]'><BiSolidLeftArrow className='absolute left-[-27px] top-[55px]' size={35} />
+
+
+
+                        <div className='flex flex-col'>
+                            <div className='mb-[15px]'>
+                                <h4 className='text-[18px] AD-font'>SSC</h4>
+                                <p className='hidden max-md:block AD-font'>(2018-2019)</p>
+                            </div>
+                            <h3 className='text-[22px] AD-font'>M.T High School</h3>
+                            <p className='AD-font'>Percentage = 76%</p>
+                        </div>
+                        <div>
+                            <p className='max-md:hidden AD-font'>(2018-2019)</p>
+                        </div>
+                    </div>
+
+
+                    <div className=' flex gap-x-[20px] justify-between p-[10px] absolute top-[150px] left-[-360px] border-[1.5px] border-r-[5px] w-[310px] h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-md:w-[180px] max-lg:top-[250px]'><BiSolidRightArrow className='absolute right-[-27px] top-[55px] max-lg:hidden' size={35} />
+                        <BiSolidLeftArrow className='absolute left-[-27px] top-[55px] hidden max-lg:block' size={35} />
+                        <div className='flex flex-col'>
+                            <div className='mb-[15px]'>
+                                <h4 className='text-[18px] AD-font'>B.Tech</h4>
+                                <p className='hidden max-md:block'>(2021-2025)</p>
+                            </div>
+                            <h3 className='text-[22px] AD-font'>BITS Hign School</h3>
+                            <p className='AD-font'>Percentage = 76%</p>
+                        </div>
+                        <div>
+                            <p className='max-md:hidden AD-font'>(2020-2021)</p>
+                        </div>
+                    </div>
+
+
+                    <div className=' flex gap-x-[20px] justify-between p-[10px] absolute bottom-[50px] right-[-390px] border-[1.5px] border-r-[5px] w-fit h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-lg:bottom-[55px]'><BiSolidLeftArrow className='absolute left-[-27px] top-[55px]' size={35} />
+                        <div className='flex flex-col'>
+                            <div className='mb-[15px]'>
+                                <h4 className='text-[18px] AD-font'>B.Tech</h4>
+                                <p className='hidden max-md:block AD-font'>(2021-2025)</p>
+                            </div>
+                            <h3 className='text-[22px] AD-font'>Silver Oak University</h3>
+                            <p className='AD-font'>CGPA = 9.4</p>
+                        </div>
+                        <div>
+                            <p className='max-md:hidden AD-font'>(2021-2025)</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Education
