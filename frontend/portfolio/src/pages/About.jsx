@@ -6,6 +6,12 @@ import textline from '../assets/textline.png'
 import dottedline from '../assets/dottedline.png'
 import myphoto from '../assets/myphoto.png'
 import pinlogo from '../assets/pinlogo.png'
+import tenserflowlogo from '../assets/tenserflowlogo.png'
+import numpylogo from '../assets/numpylogo.png'
+import keraslogo from '../assets/keraslogo.png'
+import pytorchlogo from '../assets/pytorchlogo.png'
+import scikitlearnlogo from '../assets/scikitlearnlogo.png'
+import pandaslogo from '../assets/pandaslogo.png'
 
 function About() {
     const aiSkillsRef = useRef(null);
@@ -17,7 +23,7 @@ function About() {
             scrollRef.current.scrollBy({
                 left: scrollAmount,
                 behavior: 'smooth'
-            });
+            });     
         }
     };
 
@@ -116,32 +122,32 @@ function About() {
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] min-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>TensorFlow</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={pythonlogo} alt="Tenserflow logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={tenserflowlogo} alt="Tenserflow logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] min-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>PyTorch</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={pythonlogo} alt="Pytorch logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={pytorchlogo} alt="Pytorch logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] min-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Scikit-Learn</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={pythonlogo} alt="Scikit Learn logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={scikitlearnlogo} alt="Scikit Learn logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] min-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Pandas</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={pythonlogo} alt="Pandas logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={pandaslogo} alt="Pandas logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] min-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>NumPy</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={pythonlogo} alt="Numpy logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={numpylogo} alt="Numpy logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] min-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Keras</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={pythonlogo} alt="Keras logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='rounded-[40px] h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={keraslogo} alt="Keras logo" /></div>
                                     </li>
                                 </ul>
                             </div>
