@@ -48,7 +48,7 @@ function Navbar() {
               <a href="#contact"><li>Contact</li></a>
             </ul>
           </div> */}
-          <div className='relative'>
+          <div className='relative z-[10000]'>
             <img
               className='h-[25px] w-auto md:hidden cursor-pointer'
               src={menu}
@@ -57,20 +57,20 @@ function Navbar() {
             />
 
             {isOpen && (
-              <div className="fixed inset-0 z-[999]">
+              <div className="fixed w-screen h-screen top-0 left-0 bg-black/30">
                 {/* Backdrop */}
-                <div className="absolute inset-0 bg-black/30 "></div>
+                <div className="relative "></div>
 
                 {/* Popup */}
                 <ul
                   ref={menuRef}
-                  className="absolute top-[40px] right-0 bg-[#C9C5B5] h-fit w-fit flex flex-col gap-y-[10px] p-[20px] border-b-[7px] items-start pr-[60px] border-[2px] border-black rounded-[20px] koulen-font md:hidden z-[1000] max-md:right-[20px] max-md:top-[60px]"
+                  className=" z-[1000] absolute top-[40px] right-0 bg-[#C9C5B5] h-fit w-fit flex flex-col gap-y-[10px] p-[20px] border-b-[7px] items-start pr-[60px] border-[2px] border-black rounded-[20px] koulen-font md:hidden max-md:right-[20px] max-md:top-[60px]"
                 >
-                  <li onClick={() => setIsOpen(false)}><a href="#hero">Home</a></li>
-                  <li onClick={() => setIsOpen(false)}><a href="#about">About</a></li>
-                  <li onClick={() => setIsOpen(false)}><a href="#education">Education</a></li>
-                  <li onClick={() => setIsOpen(false)}><a href="#projects">Projects</a></li>
-                  <li onClick={() => setIsOpen(false)}><a href="#contact">Contact</a></li>
+                  <li onClick={() => setIsOpen(false)}><a href="/#hero">Home</a></li>
+                  <li onClick={() => setIsOpen(false)}><a href="/#about">About</a></li>
+                  <li onClick={() => setIsOpen(false)}><a href="/#education">Education</a></li>
+                  <li onClick={() => setIsOpen(false)}><a href="/#projects">Projects</a></li>
+                  <li onClick={() => setIsOpen(false)}><a href="/#contact">Contact</a></li>
                 </ul>
               </div>
             )}
@@ -80,11 +80,11 @@ function Navbar() {
 
         <div className='bg-[#C9C5B5] border-black border-t-[2px] border-l-[2px] border-r-[2px] border-b-[10px]  rounded-[18px] w-full flex py-[30px] mb-[50px] max-md:hidden'>
           <ul className='flex flex-col items-end w-full pr-[15px] gap-y-[10px] koulen-font'>
-            <a href="#hero"><li>Home</li></a>
-            <a href="#about"><li>About</li></a>
-            <a href="#education"><li>Education</li></a>
-            <a href="#projects"><li>Projects</li></a>
-            <a href="#contact"><li>Contact</li></a>
+            <a href="/#hero"><li>Home</li></a>
+            <a href="/#about"><li>About</li></a>
+            <a href="/#education"><li>Education</li></a>
+            <a href="/#projects"><li>Projects</li></a>
+            <a href="/#contact"><li>Contact</li></a>
           </ul>
         </div>
 

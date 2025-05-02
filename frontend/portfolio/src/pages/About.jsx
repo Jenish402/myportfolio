@@ -104,7 +104,7 @@ function About() {
                         <div className='flex items-center w-full'>
                             <button
                                 onClick={() => scroll(aiSkillsRef, 'left')}
-                                className='flex-shrink-0 z-10 cursor-pointer hover:bg-gray-100 rounded-full'
+                                className='flex-shrink-0  cursor-pointer hover:bg-gray-100 rounded-full'
                             >
                                 <IoIosArrowBack className='text-[30px]' />
                             </button>
@@ -154,7 +154,7 @@ function About() {
 
                             <button
                                 onClick={() => scroll(aiSkillsRef, 'right')}
-                                className='flex-shrink-0 z-10 cursor-pointer hover:bg-gray-100 rounded-full'
+                                className='flex-shrink-0 cursor-pointer hover:bg-gray-100 rounded-full'
                             >
                                 <IoIosArrowForward className='text-[30px]' />
                             </button>
@@ -165,7 +165,7 @@ function About() {
                         <div className='flex items-center w-full'>
                             <button
                                 onClick={() => scroll(webSkillsRef, 'left')}
-                                className='flex-shrink-0 z-10 cursor-pointer hover:bg-gray-100 rounded-full'
+                                className='flex-shrink-0  cursor-pointer hover:bg-gray-100 rounded-full'
                             >
                                 <IoIosArrowBack className='text-[30px]' />
                             </button>
@@ -215,7 +215,7 @@ function About() {
 
                             <button
                                 onClick={() => scroll(webSkillsRef, 'right')}
-                                className='flex-shrink-0 z-10 cursor-pointer hover:bg-gray-100 rounded-full'
+                                className='flex-shrink-0  cursor-pointer hover:bg-gray-100 rounded-full'
                             >
                                 <IoIosArrowForward className='text-[30px]' />
                             </button>
