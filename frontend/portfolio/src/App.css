@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'koulen';
-    src: url('./fonts/koulen.ttf') format('truetype');
+    src: url('./assets/fonts/koulen.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
 @font-face {
     font-family: 'AD';
-    src: url('./fonts/AD.ttf') format('truetype');
+    src: url('./assets/fonts/AD.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
