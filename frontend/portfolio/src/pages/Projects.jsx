@@ -42,7 +42,7 @@ function Projects() {
                         <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[20px]' src={textline} alt="" />
                     </h1>
                 </div>
-                <div>View more</div>
+                <div className='AD-font'><a href="#construction">View more</a></div>
             </header>
             <section className='flex flex-col gap-y-[30px] w-full' aria-labelledby="ai-ml-projects-title">
 
