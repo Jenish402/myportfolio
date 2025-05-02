@@ -19,11 +19,11 @@ function Navbar() {
 
         <div className='bg-[#C9C5B5] border-black border-t-[2px] border-l-[2px] border-r-[2px] border-b-[10px]  rounded-[18px] w-full flex py-[30px] mb-[50px] max-md:hidden'>
           <ul className='flex flex-col items-end w-full pr-[15px] gap-y-[10px] koulen-font'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Education</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <a href="#hero"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#education"><li>Education</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#contact"><li>Contact</li></a>
           </ul>
         </div>
 
@@ -39,9 +39,11 @@ function Navbar() {
 
           <img className='h-full w-full mb-[30px] max-md:hidden' src={line} alt="" />
 
-          <button className='border-t-[2px] border-l-[2px] border-r-[2px] border-b-[10px] rounded-[18px] py-[15px] px-[30px] max-lg:py-[8px] max-lg:px-[15px] max-lg:border-b-[8px] max-md:text-[15px] max-md:border-b-[5px] max-md:border-l-[1px] max-md:border-t-[1px] max-md:border-r-[1px] max-sm:text-[10px] max-sm:rounded-[10px]'>
+          <a href="./jenishsoniresume-1.pdf"  target="_blank" rel="noopener noreferrer">
+          <button className='AD-font border-t-[2px] border-l-[2px] border-r-[2px] cursor-pointer border-b-[10px] rounded-[18px] py-[15px] px-[30px] max-lg:py-[8px] max-lg:px-[15px] max-lg:border-b-[8px] max-md:text-[20px] max-md:border-b-[5px] max-md:border-l-[1px] max-md:border-t-[1px] max-md:border-r-[1px] max-sm:text-[10px] max-sm:rounded-[10px]'>
             Download CV
           </button>
+          </a>
         </div>
       </div>
     </nav>

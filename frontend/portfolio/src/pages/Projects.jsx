@@ -35,16 +35,16 @@ function Projects() {
     };
 
     return (
-        <div className='flex flex-col w-full gap-y-[40px]'>
-            <div className='flex w-full items-center justify-between'>
+        <section className='flex flex-col w-full gap-y-[40px]' aria-label="Projects Section">
+            <header className='flex w-full items-center justify-between'>
                 <div className='relative flex justify-between'>
                     <h1 className='relative text-[50px] max-sm:text-[60px] koulen-font'>PROJECTS
                         <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[20px]' src={textline} alt="" />
                     </h1>
                 </div>
                 <div>View more</div>
-            </div>
-            <div className='flex flex-col gap-y-[30px] w-full'>
+            </header>
+            <section className='flex flex-col gap-y-[30px] w-full' aria-labelledby="ai-ml-projects-title">
 
                 {/* First Carousel - AI/ML Projects */}
                 <div className='flex items-center'>
@@ -314,8 +314,8 @@ function Projects() {
                     </button>
                 </div>
 
-            </div>
-        </div>
+            </section>
+        </section>
     )
 }
 
