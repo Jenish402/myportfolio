@@ -1,9 +1,10 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import textline from '../assets/textline.png'
 import { FaRegFolderClosed, FaRegClock } from "react-icons/fa6";
 import linescratch from '../assets/linescratch.png'
 import projectimage from '../assets/projectimage.png'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 
 function Projects() {
@@ -42,7 +43,8 @@ function Projects() {
                         <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[20px]' src={textline} alt="" />
                     </h1>
                 </div>
-                <div className='AD-font'><a href="#construction">View more</a></div>
+                <Link to='/underconstruction' className='AD-font'>View more</Link>
+                
             </header>
             <section className='flex flex-col gap-y-[30px] w-full' aria-labelledby="ai-ml-projects-title">
 
@@ -190,7 +192,7 @@ function Projects() {
                         <IoIosArrowBack className='text-[30px]' />
                     </button>
                     <div className='flex gap-x-[20px] w-full overflow-x-auto' ref={webSkillsRef} style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-                    <div className='flex flex-col min-w-[350px] border-[3px] border-black rounded-[20px] border-b-[15px] max-md:min-w-[300px] max-md:h-fit max-sm:min-w-[200px]'>
+                        <div className='flex flex-col min-w-[350px] border-[3px] border-black rounded-[20px] border-b-[15px] max-md:min-w-[300px] max-md:h-fit max-sm:min-w-[200px]'>
                             <div className='flex items-center justify-between px-[20px] py-[10px] max-sm:px-[10px]'>
                                 <div className='flex items-center max-sm:gap-x-[5px]'>
                                     <FaRegFolderClosed />
