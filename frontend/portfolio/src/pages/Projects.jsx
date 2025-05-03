@@ -5,6 +5,7 @@ import linescratch from '../assets/linescratch.png'
 import projectimage from '../assets/projectimage.png'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 
 function Projects() {
@@ -43,8 +44,12 @@ function Projects() {
                         <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[20px]' src={textline} alt="" />
                     </h1>
                 </div>
-                <Link to='/underconstruction' className='AD-font'>View more</Link>
-                
+                <div className='flex items-center cursor-pointer' >
+                    <Link to='/underconstruction' className='AD-font'>View more
+                    </Link>
+                        <Link to='/underconstruction'><IoIosArrowRoundForward className='text-[50px]' /></Link>
+                </div>
+
             </header>
             <section className='flex flex-col gap-y-[30px] w-full' aria-labelledby="ai-ml-projects-title">
 

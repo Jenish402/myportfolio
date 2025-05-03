@@ -30,6 +30,12 @@ nav {
     background-size: cover;
 }
 
+.nav {
+    background-image: url('./assets/navbackgroundd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media(max-width:768px){
   nav {
     background-image: url('./assets/navbackground.png');
