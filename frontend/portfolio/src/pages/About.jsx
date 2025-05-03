@@ -131,7 +131,9 @@ function About() {
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>TensorFlow</p>
-                                        <div className='border-t-[7px] rounded-[30px]'> <Lottie animationData={tenserflow} loop={true} /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'> 
+                                            {/* <Lottie animationData={tenserflow} loop={true} /> */}
+                                            <img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={tenserflowlogo} alt="Tenserflow logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
