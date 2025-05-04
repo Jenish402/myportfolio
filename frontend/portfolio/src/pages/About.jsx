@@ -32,11 +32,11 @@ function About() {
             scrollRef.current.scrollBy({
                 left: scrollAmount,
                 behavior: 'smooth'
-            });     
+            });
         }
     };
 
-    
+
 
     return (
         <main className='flex flex-col w-full min-h-screen mt-0 pb-0'>
@@ -51,14 +51,14 @@ function About() {
             <section className='flex flex-col gap-y-[30px] w-full'>
                 <header className='relative'>
                     <h1 className='relative text-[50px] max-sm:text-[40px] koulen-font'>ABOUT
-                                            <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
-                                        </h1>
+                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
+                    </h1>
                 </header>
 
                 <article className='relative about flex flex-col gap-y-[50px] p-[20px] w-full rounded-[60px] border-l-[2px] border-t-[2px] border-r-[2px] border-b-[20px] max-sm:border-[1px] max-sm:border-b-[10px]'>
-                    <img className='absolute right-0 top-0 max-lg:h-[80px]' src={pinlogo} alt="Pin icon decoration" />
+                    <img className='absolute right-0 top-0 max-lg:h-[80px] max-2xl:h-[100px]' src={pinlogo} alt="Pin icon decoration" />
                     <div className='flex justify-between gap-x-[30px] w-full max-sm:flex-col'>
-                        <div className='bg-[#C9C5B5] h-[400px] rounded-[50px] border-t-[2px] border-l-[2px] border-r-[2px] border-b-[20px] max-sm:border-b-[10px] max-sm:p-[0px]'>
+                        <div className='bg-[#C9C5B5] h-[400px] rounded-[50px] border-t-[2px] border-l-[2px] border-r-[2px] border-b-[20px] max-sm:border-b-[10px] max-sm:p-[0px] max-2xl:w-[400px]'>
                             <img className='h-full w-full object-cover rounded-[30px]' src={myphoto} alt="Profile photo of the developer" />
                         </div>
                         <div className='w-[800px] max-md:w-full max-sm:mt-[20px]'>
@@ -104,8 +104,8 @@ function About() {
             <section className='flex flex-col w-full mt-[100px] gap-y-[30px]'>
                 <div>
                     <h1 className='relative text-[50px] max-sm:text-[40px] koulen-font'>SKILLS
-                                            <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
-                                        </h1>
+                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
+                    </h1>
                 </div>
 
                 <div className='flex flex-col w-full gap-y-[10px]'>
@@ -133,7 +133,7 @@ function About() {
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>TensorFlow</p>
-                                        <div className='border-t-[7px] rounded-[30px]'> 
+                                        <div className='border-t-[7px] rounded-[30px]'>
                                             {/* <Lottie animationData={tenserflow} loop={true} /> */}
                                             <img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={tenserflowlogo} alt="Tenserflow logo" /></div>
                                     </li>

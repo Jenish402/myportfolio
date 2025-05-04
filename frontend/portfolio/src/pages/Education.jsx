@@ -25,7 +25,7 @@ function Education() {
             </div>
             <div className=' relative education  w-full h-[650px] p-[20px] border-[2px] rounded-[50px] border-b-[20px] max-lg:h-[800px]'>
                 {/* <Lottie className='absolute h-[800px] top-[-100px] left-[250px] opacity-10' animationData={education} loop={true}></Lottie> */}
-                <img className='absolute right-0 top-0 max-lg:h-[80px]' src={pinlogo} alt="Pin decoration graphic" />
+                <img className='absolute right-0 top-0 max-lg:h-[80px] max-2xl:h-[100px]' src={pinlogo} alt="Pin decoration graphic" />
                 <div className='relative top-[50px] left-[50%] h-[500px] w-[3px] bg-black max-lg:left-[5%] max-lg:h-[650px]'>
 
                     <div className='absolute h-[20px] w-[20px] bg-black rounded-full top-[85px] left-[-8.5px] max-lg:top-[120px]'></div>
@@ -77,7 +77,7 @@ function Education() {
 
 
                     <article className=' flex gap-x-[20px] justify-between p-[10px] absolute bottom-[50px] right-[-390px] border-[1.5px] border-r-[5px] w-fit h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-lg:bottom-[55px] max-md:h-[180px] max-md:w-[210px] max-md:bottom-[25px]'><BiSolidLeftArrow className='absolute left-[-27px] top-[55px]' size={35} />
-                        <div className='flex flex-col w-full'>
+                        <div className='flex flex-col w-fit'>
                             <div className='mb-[15px]'>
                                 <div className='flex gap-x-[10px]'>
                                 <h4 className='relative text-[18px] AD-font max-sm:text-[15px]'>B.Tech</h4>

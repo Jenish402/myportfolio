@@ -87,7 +87,7 @@ function Home() {
 
           {/* Hero section */}
           <section id='hero' className='min-h-screen flex flex-col'>
-            <div className='mb-[50px] max-md:mb-[0px]'>
+            <div className='mb-[50px] max-md:mb-[0px] max-2xl:mb-[40px]'>
               <h1 className='pt-[70px] text-[25px] max-md:pt-[30px] AD-font'>
                 Welcome to my portfolio
                 <img className='h-auto w-[150px]' src={underline} alt="Stylish underline graphic" />
@@ -95,9 +95,9 @@ function Home() {
             </div>
 
             <div className='flex flex-1 w-full items-center justify-between max-md:flex-col-reverse max-lg:gap-y-[30px] max-lg:gap-x-[40px] max-lg:items-start max-md:items-center max-md:justify-center'>
-              <div className='flex flex-col w-[700px] gap-y-[50px] max-lg:w-[500px] max-md:gap-y-[30px] max-md:w-full'>
+              <div className='flex flex-col w-[700px] gap-y-[50px] max-lg:w-[500px] max-md:gap-y-[30px] max-md:w-full max-2xl:gap-y-[30px]'>
                 {/* <h1 className='text-[50px] max-lg:text-[35px] AD-font'>Hi, I'm JENISH SONI 👋</h1> */}
-                <h1 className='flex gap-x-[10px] text-[50px] max-lg:text-[35px] AD-font max-sm:text-[30px]'><p>Hi, I'm</p>
+                <h1 className='flex gap-x-[10px] text-[50px] max-lg:text-[35px] AD-font max-sm:text-[30px] max-2xl:text-[40px]'><p>Hi, I'm</p>
                   <Typewriter
                     words={["JENISH SONI 👋", "AI Engineer", "Web Developer", "Tech Enthusiast"]}
                     loop={0}
@@ -120,16 +120,16 @@ function Home() {
 
                 <div className='flex gap-x-[30px] items-center'>
                   <a href="./jenishsoniresume-1.pdf" target="_blank" rel="noopener noreferrer">
-                    <button className='flex items-center cursor-pointer AD-font border-t-[2px] border-l-[2px] border-r-[2px] border-b-[10px] rounded-[18px] py-[15px] px-[30px] max-lg:py-[8px] max-lg:px-[15px] max-lg:border-b-[8px] max-md:text-[20px] max-md:border-b-[5px] max-md:border-l-[1px] max-md:border-t-[1px] max-md:border-r-[1px] max-sm:text-[12px] max-sm:rounded-[10px]'>
+                    <button className='flex items-center cursor-pointer AD-font border-t-[2px] border-l-[2px] border-r-[2px] border-b-[10px] rounded-[18px] py-[15px] px-[30px] max-lg:py-[8px] max-lg:px-[15px] max-lg:border-b-[8px] max-md:text-[20px] max-md:border-b-[5px] max-md:border-l-[1px] max-md:border-t-[1px] max-md:border-r-[1px] max-sm:text-[12px] max-sm:rounded-[10px] max-2xl:px-[25px] max-2xl:py-[12px]'>
                       <p>Download CV</p>
-                      <Lottie className='h-[40px] max-sm:h-[25px]' animationData={download} loop={true}></Lottie>
+                      <Lottie className='h-[40px] max-sm:h-[25px] max-2xl:h-[30px]' animationData={download} loop={true}></Lottie>
                     </button>
                   </a>
 
                   <Link to={'/underconstruction'}>
                     <button className='flex items-center w-fit cursor-pointer relative text-[18px] AD-font'>
                       <p className='max-sm:text-[12px]'>View my work</p>
-                      <Lottie className='h-[50px] max-sm:h-[40px]' animationData={rightarrow} loop={true}></Lottie>
+                      <Lottie className='h-[50px] max-sm:h-[40px] ' animationData={rightarrow} loop={true}></Lottie>
                     </button>
                   </Link>
                 </div>

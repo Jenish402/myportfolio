@@ -49,7 +49,7 @@ function Navbar() {
   return (
     <nav className='sticky top-0 w-[350px] h-screen flex flex-col items-center p-[20px] max-md:w-screen max-md:h-[130px] max-md:pt-[20px] max-md:pb-[150px] max-sm:pb-[0px] max-lg:w-[220px]'>
       <div className='flex flex-col items-center w-full max-lg:items-start'>
-        <div className='pt-[50px] mb-[50px] flex items-center w-full max-md:mb-[10px] max-lg:pt-[20px] max-lg:justify-between max-md:pt-[0px]'>
+        <div className='pt-[50px] mb-[50px] flex items-center w-full max-md:mb-[10px] max-lg:pt-[20px] max-lg:justify-between max-md:pt-[0px] max-2xl:mb-[20px]'>
           <img className='h-[60px] w-auto max-lg:h-[50px] max-sm:h-[35px]' src={jenishlogo} alt="JENISH" />
           <div className='relative z-[10000]'>
             <img
@@ -81,8 +81,8 @@ function Navbar() {
           </div>
         </div>
 
-        <div className='bg-[#C9C5B5] border-black border-t-[2px] border-l-[2px] border-r-[2px] border-b-[10px]  rounded-[18px] w-full flex py-[30px] mb-[50px] max-md:hidden'>
-          <ul className='flex flex-col items-end w-full pr-[15px] gap-y-[10px] koulen-font'>
+        <div className='bg-[#C9C5B5] border-black border-t-[2px] border-l-[2px] border-r-[2px] border-b-[10px]  rounded-[18px] w-full flex py-[30px] mb-[50px] max-md:hidden max-2xl:py-[20px] max-2xl:mb-[30px]'>
+          <ul className='flex flex-col items-end w-full pr-[15px] gap-y-[10px] koulen-font max-2xl:gap-y-[5px]'>
           {menuItems.map((item, index) => (
           <a className='relative' key={index} href={item.href} onClick={() => setActiveItem(index)}>
             <li className="flex items-center gap-2">
@@ -94,10 +94,10 @@ function Navbar() {
           </ul>
         </div>
 
-        <img className='h-full w-full mb-[30px] max-md:hidden' src={line} alt="" />
+        <img className='h-full w-full mb-[30px] max-md:hidden max-2xl:mb-[25px]' src={line} alt="" />
 
         <div className='w-full flex flex-col items-center justify-between max-md:flex-row'>
-          <div className='flex items-center justify-center gap-x-[30px] mb-[30px] max-md:mb-[0] max-lg:gap-x-[20px] max-md:gap-x-[10px]'>
+          <div className='flex items-center justify-center gap-x-[30px] mb-[30px] max-md:mb-[0] max-lg:gap-x-[20px] max-md:gap-x-[10px] max-2xl:mb-[25px]'>
             <img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' src={facebook} alt="" />
             <img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' src={instagram} alt="" />
             <img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' src={twitter} alt="" />
