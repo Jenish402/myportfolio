@@ -19,9 +19,9 @@ function Education() {
             </Helmet>
 
             <div className='relative mb-[40px]'>
-                <h1 className='relative text-[50px] max-sm:text-[60px] koulen-font'>EDUCATION
-                    <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[20px]' src={textline} alt="Underline design for Education heading" />
-                </h1>
+                <h1 className='relative text-[50px] max-sm:text-[40px] koulen-font'>EDUCATION
+                                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
+                                    </h1>
             </div>
             <div className=' relative education  w-full h-[650px] p-[20px] border-[2px] rounded-[50px] border-b-[20px] max-lg:h-[800px]'>
                 {/* <Lottie className='absolute h-[800px] top-[-100px] left-[250px] opacity-10' animationData={education} loop={true}></Lottie> */}
@@ -37,7 +37,7 @@ function Education() {
                     <div className='absolute h-[20px] w-[20px] bg-black rounded-full bottom-[110px] left-[-8.5px] max-lg:bottom-[120px]'></div>
                     <div className='absolute h-[40px] w-[40px] border-[1px] border-black rounded-full bottom-[100px] left-[-18.5px] max-lg:bottom-[110px]'></div>
 
-                    <article className=' flex gap-x-[20px] justify-between p-[10px] absolute top-[20px] right-[-350px] border-[1.5px] border-r-[5px] w-fit h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-lg:top-[55px]'><BiSolidLeftArrow className='absolute left-[-27px] top-[55px]' size={35} />
+                    <article className=' flex gap-x-[20px] justify-between p-[10px] absolute top-[20px] right-[-350px] border-[1.5px] border-r-[5px] w-fit h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-lg:top-[55px] max-sm:w-[200px]'><BiSolidLeftArrow className='absolute left-[-27px] top-[55px]' size={35} />
 
 
                         <div className='flex flex-col'>

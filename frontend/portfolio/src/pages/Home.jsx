@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { Typewriter } from 'react-simple-typewriter';
 import { Helmet } from 'react-helmet'
 import Navbar from '../components/Navbar'
 import underline from '../assets/underline.png'
@@ -16,46 +17,47 @@ import rightarrow from '../assets/right-arrow.json'
 import animatedcircle from '../assets/musicmod.json'
 import musicFile from "../assets/music.mp3";
 // import Lottie from 'lottie-react'
-import musicnotes from '../assets/musicnotes.json'
-
+import musiccircle from '../assets/musiccircle.json'
+import pc from '../assets/pc.json'
+import download from '../assets/download.json'
 
 function Home() {
 
   const audioRef = useRef(null);
-    const [isPlaying, setIsPlaying] = useState(false);
-    const [hasInteracted, setHasInteracted] = useState(false);
-  
-    useEffect(() => {
-      const handleUserInteraction = () => {
-        if (!hasInteracted) {
-          audioRef.current.play()
-            .then(() => {
-              setIsPlaying(true);
-            })
-            .catch((e) => console.log("Autoplay blocked:", e));
-          setHasInteracted(true);
-        }
-      };
-  
-      window.addEventListener("click", handleUserInteraction);
-      window.addEventListener("scroll", handleUserInteraction);
-  
-      return () => {
-        window.removeEventListener("click", handleUserInteraction);
-        window.removeEventListener("scroll", handleUserInteraction);
-      };
-    }, [hasInteracted]);
-  
-    const togglePlay = () => {
-      if (audioRef.current.paused) {
-        audioRef.current.play();
-        setIsPlaying(true);
-      } else {
-        audioRef.current.pause();
-        setIsPlaying(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
+
+  useEffect(() => {
+    const handleUserInteraction = () => {
+      if (!hasInteracted) {
+        audioRef.current.play()
+          .then(() => {
+            setIsPlaying(true);
+          })
+          .catch((e) => console.log("Autoplay blocked:", e));
+        setHasInteracted(true);
       }
     };
-  
+
+    window.addEventListener("click", handleUserInteraction);
+    window.addEventListener("scroll", handleUserInteraction);
+
+    return () => {
+      window.removeEventListener("click", handleUserInteraction);
+      window.removeEventListener("scroll", handleUserInteraction);
+    };
+  }, [hasInteracted]);
+
+  const togglePlay = () => {
+    if (audioRef.current.paused) {
+      audioRef.current.play();
+      setIsPlaying(true);
+    } else {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
+
 
   return (
     <div className='w-full h-screen flex overflow-hidden fixed'>
@@ -94,7 +96,19 @@ function Home() {
 
             <div className='flex flex-1 w-full items-center justify-between max-md:flex-col-reverse max-lg:gap-y-[30px] max-lg:gap-x-[40px] max-lg:items-start max-md:items-center max-md:justify-center'>
               <div className='flex flex-col w-[700px] gap-y-[50px] max-lg:w-[500px] max-md:gap-y-[30px] max-md:w-full'>
-                <h1 className='text-[50px] max-lg:text-[35px] AD-font'>Hi, I'm JENISH SONI 👋</h1>
+                {/* <h1 className='text-[50px] max-lg:text-[35px] AD-font'>Hi, I'm JENISH SONI 👋</h1> */}
+                <h1 className='flex gap-x-[10px] text-[50px] max-lg:text-[35px] AD-font max-sm:text-[30px]'><p>Hi, I'm</p>
+                  <Typewriter
+                    words={["JENISH SONI 👋", "AI Engineer", "Web Developer", "Tech Enthusiast"]}
+                    loop={0}
+                    cursor
+                    cursorStyle='|'
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={1500}
+                  />
+                </h1>
+
                 <p className='text-justify max-lg:text-[15px] AD-font'>
                   An enthusiastic AI Engineer and Full Stack Developer, passionate about building intelligent systems and dynamic web applications. <br /> <br />
 
@@ -106,15 +120,16 @@ function Home() {
 
                 <div className='flex gap-x-[30px] items-center'>
                   <a href="./jenishsoniresume-1.pdf" target="_blank" rel="noopener noreferrer">
-                    <button className='cursor-pointer AD-font border-t-[2px] border-l-[2px] border-r-[2px] border-b-[10px] rounded-[18px] py-[15px] px-[30px] max-lg:py-[8px] max-lg:px-[15px] max-lg:border-b-[8px] max-md:text-[20px] max-md:border-b-[5px] max-md:border-l-[1px] max-md:border-t-[1px] max-md:border-r-[1px] max-sm:text-[15px] max-sm:rounded-[10px]'>
-                      Download CV
+                    <button className='flex items-center cursor-pointer AD-font border-t-[2px] border-l-[2px] border-r-[2px] border-b-[10px] rounded-[18px] py-[15px] px-[30px] max-lg:py-[8px] max-lg:px-[15px] max-lg:border-b-[8px] max-md:text-[20px] max-md:border-b-[5px] max-md:border-l-[1px] max-md:border-t-[1px] max-md:border-r-[1px] max-sm:text-[12px] max-sm:rounded-[10px]'>
+                      <p>Download CV</p>
+                      <Lottie className='h-[40px] max-sm:h-[25px]' animationData={download} loop={true}></Lottie>
                     </button>
                   </a>
 
                   <Link to={'/underconstruction'}>
-                    <button className='flex items-center cursor-pointer relative text-[18px] AD-font'>
-                      <p>View my work</p>
-                      <Lottie className='h-[50px]' animationData={rightarrow} loop={true}></Lottie>
+                    <button className='flex items-center w-fit cursor-pointer relative text-[18px] AD-font'>
+                      <p className='max-sm:text-[12px]'>View my work</p>
+                      <Lottie className='h-[50px] max-sm:h-[40px]' animationData={rightarrow} loop={true}></Lottie>
                     </button>
                   </Link>
                 </div>
@@ -122,17 +137,19 @@ function Home() {
 
               <div className='relative flex flex-col items-center '>
                 {/* <img className='h-[400px] w-auto object-contain' src={myphoto} alt="Portrait of Jenish Soni" /> */}
-                <Lottie animationData={animatedcircle} loop={true}></Lottie>
-                <audio ref={audioRef} src={musicFile} loop preload="auto" />
-                      <button
-                        onClick={togglePlay}
-                       className='absolute top-[155px] border-[2px] border-white border-b-[10px] py-[15px] px-[40px] w-fit rounded-full koulen-font text-[20px] mb-[15px]'
-                      >
-                        {isPlaying ? "Stop Music" : "Play Music"}
-                        <Lottie className='absolute bottom-[-100px]' animationData={musicnotes} loop={true}></Lottie>
-                        <Lottie className='absolute top-[-200px]' animationData={musicnotes} loop={true}></Lottie>
-                        <Lottie className='absolute top-[-200px] left-[-100px]' animationData={musicnotes} loop={true}></Lottie>
-                      </button> 
+                <Lottie animationData={musiccircle} loop={true}></Lottie>
+                {/* <Lottie className='absolute top-[150px] h-[200px]' animationData={pc} loop={true}></Lottie> */}
+
+                {/* <audio ref={audioRef} src={musicFile} loop preload="auto" />
+                  <button
+                    onClick={togglePlay}
+                    className='absolute bottom-[170px] left-[230px] border-[1px] border-black p-[12px] w-fit rounded-full koulen-font text-[20px] mb-[15px]'
+                  >
+                    {isPlaying ? <TbPlayerPauseFilled /> : <PiPlayFill />}
+                    <Lottie className='absolute w-[200px] left-[-75px] bottom-[100px]' animationData={musicstrip} loop={true}></Lottie>
+                    {/* <Lottie className='absolute top-[-200px]' animationData={musicnotes} loop={true}></Lottie> */}
+                {/* <Lottie className='absolute top-[-200px] left-[-100px]' animationData={musicnotes} loop={true}></Lottie> */}
+                {/*</button> */}
               </div>
             </div>
 

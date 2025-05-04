@@ -40,14 +40,13 @@ function Projects() {
         <section className='flex flex-col w-full gap-y-[40px]' aria-label="Projects Section">
             <header className='flex w-full items-center justify-between'>
                 <div className='relative flex justify-between'>
-                    <h1 className='relative text-[50px] max-sm:text-[60px] koulen-font'>PROJECTS
-                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[20px]' src={textline} alt="" />
+                    <h1 className='relative text-[50px] max-sm:text-[40px] koulen-font'>PROJECTS
+                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
                     </h1>
                 </div>
                 <div className='flex items-center cursor-pointer' >
-                    <Link to='/underconstruction' className='AD-font'>View more
-                    </Link>
-                        <Link to='/underconstruction'><IoIosArrowRoundForward className='text-[50px]' /></Link>
+                    <Link to='/underconstruction' className='AD-font max-sm:text-[15px]'>View more</Link>
+                    <Link to='/underconstruction'><IoIosArrowRoundForward className='text-[50px] max-sm:h-[30px]' /></Link>
                 </div>
 
             </header>

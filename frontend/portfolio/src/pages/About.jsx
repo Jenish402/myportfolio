@@ -1,10 +1,10 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { Helmet } from 'react-helmet';
 import pythonlogo from '../assets/pythonlogo.png'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import textline from '../assets/textline.png'
 import dottedline from '../assets/dottedline.png'
-import myphoto from '../assets/myphoto.png'
+import myphoto from '../assets/myPhoto.jpg'
 import pinlogo from '../assets/pinlogo.png'
 import tenserflowlogo from '../assets/tenserflowlogo.png'
 import numpylogo from '../assets/numpylogo.png'
@@ -36,8 +36,10 @@ function About() {
         }
     };
 
+    
+
     return (
-        <main className='flex flex-col w-full min-h-screen mt-0 pb-16'>
+        <main className='flex flex-col w-full min-h-screen mt-0 pb-0'>
 
             <Helmet>
                 <title>About | AI Engineer & Full Stack Developer</title>
@@ -48,16 +50,16 @@ function About() {
 
             <section className='flex flex-col gap-y-[30px] w-full'>
                 <header className='relative'>
-                    <h1 className='relative text-[50px] max-sm:text-[60px] koulen-font'>ABOUT
-                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[20px]' src={textline} alt="Decorative underline for About title" />
-                    </h1>
+                    <h1 className='relative text-[50px] max-sm:text-[40px] koulen-font'>ABOUT
+                                            <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
+                                        </h1>
                 </header>
 
                 <article className='relative about flex flex-col gap-y-[50px] p-[20px] w-full rounded-[60px] border-l-[2px] border-t-[2px] border-r-[2px] border-b-[20px] max-sm:border-[1px] max-sm:border-b-[10px]'>
                     <img className='absolute right-0 top-0 max-lg:h-[80px]' src={pinlogo} alt="Pin icon decoration" />
                     <div className='flex justify-between gap-x-[30px] w-full max-sm:flex-col'>
-                        <div className='bg-[#C9C5B5] h-[400px] p-[20px] rounded-[50px] border-t-[2px] border-l-[2px] border-r-[2px] border-b-[20px] max-sm:border-b-[10px] max-sm:p-[20px]'>
-                            <img className='h-full w-full object-contain ' src={myphoto} alt="Profile photo of the developer" />
+                        <div className='bg-[#C9C5B5] h-[400px] rounded-[50px] border-t-[2px] border-l-[2px] border-r-[2px] border-b-[20px] max-sm:border-b-[10px] max-sm:p-[0px]'>
+                            <img className='h-full w-full object-cover rounded-[30px]' src={myphoto} alt="Profile photo of the developer" />
                         </div>
                         <div className='w-[800px] max-md:w-full max-sm:mt-[20px]'>
                             <h1 className='text-[50px] max-lg:text-[35px] max-sm:text-[30px] koulen-font'>WHO AM I ?</h1>
@@ -99,16 +101,16 @@ function About() {
                 </article>
             </section>
 
-            <section className='flex flex-col w-full mt-[100px] gap-y-[50px]'>
+            <section className='flex flex-col w-full mt-[100px] gap-y-[30px]'>
                 <div>
-                    <h1 className='relative text-[50px] max-sm:text-[60px] koulen-font'>SKILLS
-                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[20px]' src={textline} alt="" />
-                    </h1>
+                    <h1 className='relative text-[50px] max-sm:text-[40px] koulen-font'>SKILLS
+                                            <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
+                                        </h1>
                 </div>
 
-                <div className='flex flex-col w-full gap-y-[30px]'>
+                <div className='flex flex-col w-full gap-y-[10px]'>
                     <div><h3 className='text-[25px] koulen-font'>AI & ML Skills:</h3></div>
-                    <div className='flex flex-col gap-y-[50px] w-full'>
+                    <div className='flex flex-col gap-y-[30px] w-full'>
                         {/* AI & ML Skills Carousel */}
                         <div className='flex items-center w-full'>
                             <button
@@ -121,7 +123,7 @@ function About() {
                             <div className='w-full overflow-hidden'>
                                 <ul
                                     ref={aiSkillsRef}
-                                    className='flex items-center gap-x-[20px] overflow-x-auto w-full pb-4 scrollbar-hide'
+                                    className='flex items-center justify-between gap-x-[20px] overflow-x-auto w-full pb-4 scrollbar-hide'
                                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                                 >
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
@@ -173,7 +175,7 @@ function About() {
 
                         {/* Web Development Skills */}
                         <div><h3 className='text-[25px] koulen-font'>Web Development Skills:</h3></div>
-                        <div className='flex items-center w-full'>
+                        <div className='flex items-center justify-between w-full'>
                             <button
                                 onClick={() => scroll(webSkillsRef, 'left')}
                                 className='flex-shrink-0  cursor-pointer hover:bg-gray-100 rounded-full'
@@ -184,7 +186,7 @@ function About() {
                             <div className='w-full overflow-hidden'>
                                 <ul
                                     ref={webSkillsRef}
-                                    className='flex items-center gap-x-[20px] overflow-x-auto w-full pb-4 scrollbar-hide'
+                                    className='flex items-center justify-between gap-x-[20px] overflow-x-auto w-full pb-4 scrollbar-hide'
                                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                                 >
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>

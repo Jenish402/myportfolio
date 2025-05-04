@@ -47,20 +47,10 @@ function Navbar() {
   ];
 
   return (
-    <nav className='sticky top-0 w-[350px] h-screen flex flex-col items-center p-[20px] max-md:w-screen max-md:h-[130px] max-md:pt-[20px] max-md:pb-[0px] max-lg:w-[220px]'>
+    <nav className='sticky top-0 w-[350px] h-screen flex flex-col items-center p-[20px] max-md:w-screen max-md:h-[130px] max-md:pt-[20px] max-md:pb-[150px] max-sm:pb-[0px] max-lg:w-[220px]'>
       <div className='flex flex-col items-center w-full max-lg:items-start'>
         <div className='pt-[50px] mb-[50px] flex items-center w-full max-md:mb-[10px] max-lg:pt-[20px] max-lg:justify-between max-md:pt-[0px]'>
           <img className='h-[60px] w-auto max-lg:h-[50px] max-sm:h-[35px]' src={jenishlogo} alt="JENISH" />
-          {/* <div className='relative'>
-            <img className='h-[25px] w-auto md:hidden ' src={menu} alt="" />
-            <ul className='absolute bg-[#C9C5B5] right-[0px] top-[40px] h-fit w-fit flex flex-col gap-y-[10px] p-[20px] items-start pr-[60px] border-[2px] border-black rounded-[20px] koulen-font md:hidden'>
-              <a href="#hero"><li>Home</li></a>
-              <a href="#about"><li>About</li></a>
-              <a href="#education"><li>Education</li></a>
-              <a href="#projects"><li>Projects</li></a>
-              <a href="#contact"><li>Contact</li></a>
-            </ul>
-          </div> */}
           <div className='relative z-[10000]'>
             <img
               className='h-[25px] w-auto md:hidden cursor-pointer'
@@ -119,7 +109,7 @@ function Navbar() {
           <a href="./jenishsoniresume-1.pdf" target="_blank" rel="noopener noreferrer">
             <button className='flex items-center AD-font border-t-[2px] border-l-[2px] border-r-[2px] cursor-pointer border-b-[10px] rounded-[18px] py-[15px] px-[30px] max-lg:py-[8px] max-lg:px-[15px] max-lg:border-b-[8px] max-md:text-[15px] max-md:border-b-[5px] max-md:border-l-[1px] max-md:border-t-[1px] max-md:border-r-[1px] max-sm:text-[10px] max-sm:rounded-[10px]'>
               <p>Download CV</p>
-              <Lottie className='h-[40px]' animationData={download} loop={true}></Lottie>
+              <Lottie className='h-[40px] max-sm:h-[25px]' animationData={download} loop={true}></Lottie>
             </button>
           </a>
         </div>
