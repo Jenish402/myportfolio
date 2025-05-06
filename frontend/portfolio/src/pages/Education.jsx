@@ -21,7 +21,7 @@ function Education() {
 
             <div className='relative mb-[40px]'>
                 <motion.h1 
-                whileInView={{opacity: [0, 1], x: [-50, 10] }}
+                whileInView={{opacity: [0, 1], x: [-50, 0] }}
                 transition={{ duration: 0.7 }}
                 className='relative text-[50px] max-sm:text-[40px] koulen-font'>EDUCATION
                                         <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
@@ -57,12 +57,12 @@ function Education() {
                     <motion.div 
                     initial={{ opacity: 0, scale:0 }}
                     whileInView={{ opacity: 1, scale:1 }}
-                    transition={{ duration: 2 }}
+                    transition={{ duration: 1.5 }}
                     className='absolute h-[20px] w-[20px] bg-black rounded-full bottom-[110px] left-[-8.5px] max-lg:bottom-[120px]'></motion.div>
                     <motion.div 
                     initial={{ opacity: 0, scale:0 }}
                     whileInView={{ opacity: 1, scale:1 }}
-                    transition={{ duration: 2 }}
+                    transition={{ duration: 1.5 }}
                     className='absolute h-[40px] w-[40px] border-[1px] border-black rounded-full bottom-[100px] left-[-18.5px] max-lg:bottom-[110px]'></motion.div>
 
                     <motion.article 
@@ -112,7 +112,7 @@ function Education() {
 
                     <motion.article 
                     whileInView={{opacity: [0, 1], x: [100, 0] }}
-                    transition={{ duration: 2 }}
+                    transition={{ duration: 1 }}
                     className=' flex gap-x-[20px] justify-between p-[10px] absolute bottom-[50px] right-[-390px] border-[1.5px] border-r-[5px] w-fit h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-lg:bottom-[55px] max-md:h-[180px] max-md:w-[210px] max-md:bottom-[25px]'><BiSolidLeftArrow className='absolute left-[-27px] top-[55px]' size={35} />
                         <div className='flex flex-col w-fit'>
                             <div className='mb-[15px]'>

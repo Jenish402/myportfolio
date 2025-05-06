@@ -41,7 +41,7 @@ function Projects() {
             <header className='flex w-full items-center justify-between'>
                 <div className='relative flex justify-between'>
                     <motion.h1 
-                    whileInView={{opacity: [0, 1], x: [-50, 10] }}
+                    whileInView={{opacity: [0, 1], x: [-50, 0] }}
                     transition={{ duration: 0.7 }}
                     className='relative text-[50px] max-sm:text-[40px] koulen-font'>PROJECTS
                         <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
@@ -57,7 +57,7 @@ function Projects() {
 
                 {/* First Carousel - AI/ML Projects */}
                 <motion.div 
-                whileInView={{opacity: [0, 1], x: [-500, 10] }}
+                whileInView={{opacity: [0, 1], x: [-100, 0] }}
                 transition={{ duration: 0.7 }}
                 className='flex items-center'>
                     <button
@@ -194,7 +194,7 @@ function Projects() {
 
                 {/* Second Carousel - Web Development Projects */}
                 <motion.div 
-                whileInView={{opacity: [0, 1], x: [200, -10] }}
+                whileInView={{opacity: [0, 1], x: [200, 0] }}
                 transition={{ duration: 0.7 }}
                 className='flex items-center'>
                     <button

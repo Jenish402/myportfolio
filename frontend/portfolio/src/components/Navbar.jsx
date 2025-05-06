@@ -56,7 +56,7 @@ function Navbar() {
 
 
   return (
-    <nav className='sticky top-0 w-[350px] h-screen flex flex-col items-center p-[20px] max-md:w-screen max-md:h-[130px] max-md:pt-[20px] max-md:pb-[150px] max-sm:pb-[0px] max-lg:w-[220px]'>
+    <nav className='z-[100] sticky top-0 w-[350px] h-screen flex flex-col items-center p-[20px] max-md:w-screen max-md:h-[130px] max-md:pt-[20px] max-md:pb-[150px] max-sm:pb-[0px] max-lg:w-[220px]'>
       <div className='flex flex-col items-center w-full max-lg:items-start'>
         <div className='pt-[50px] mb-[50px] flex items-center w-full max-md:mb-[10px] max-lg:pt-[20px] max-lg:justify-between max-md:pt-[0px] max-2xl:mb-[20px]'>
           <img className='h-[60px] w-auto max-lg:h-[50px] max-sm:h-[35px]' src={jenishlogo} alt="JENISH" />
@@ -69,11 +69,7 @@ function Navbar() {
             />
 
             {isOpen && (
-              <div className="fixed w-screen h-screen top-0 left-0 bg-black/30">
-                {/* Backdrop */}
-                <div className="relative "></div>
-
-                {/* Popup */}
+              <div className="fixed inset-0 bg-black/30">
                 <ul
                   ref={menuRef}
                   className=" z-[1000] absolute top-[40px] right-0 bg-[#C9C5B5] h-fit w-fit flex flex-col gap-y-[10px] p-[20px] border-b-[7px] items-start pr-[60px] border-[2px] border-black rounded-[20px] koulen-font md:hidden max-md:right-[20px] max-md:top-[60px]"
@@ -116,10 +112,10 @@ function Navbar() {
 
         <div className='w-full flex flex-col items-center justify-between max-md:flex-row'>
           <div className='flex items-center justify-center gap-x-[30px] mb-[30px] max-md:mb-[0] max-lg:gap-x-[20px] max-md:gap-x-[10px] max-2xl:mb-[25px]'>
-            <a href="mailto:iamjenishsoni402@gmail.com"><img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' src={mail} alt="" /></a>
-            <a href="https://www.instagram.com/0001jenish_soni1000?igsh=MTdpYnZwanh0Nzl5ag=="><img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' src={instagram} alt="" /></a>
-            <a href="https://github.com/Jenish402"><img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' src={github} alt="" /></a>
-            <a href="https://www.linkedin.com/in/jenish-soni-a14174224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' src={linkedin} alt="" /></a>
+            <a href="mailto:iamjenishsoni402@gmail.com"><img className='h-[50px] w-auto object-contain max-lg:h-[35px] max-md:h-[28px]' src={mail} alt="" /></a>
+            <a href="https://www.instagram.com/0001jenish_soni1000?igsh=MTdpYnZwanh0Nzl5ag=="><img className='h-[50px] w-auto object-contain max-lg:h-[35px] max-md:h-[28px]' src={instagram} alt="" /></a>
+            <a href="https://github.com/Jenish402"><img className='h-[50px] w-auto object-contain max-lg:h-[35px] max-md:h-[28px]' src={github} alt="" /></a>
+            <a href="https://www.linkedin.com/in/jenish-soni-a14174224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img className='h-[50px] w-auto object-contain max-lg:h-[35px] max-md:h-[28px]' src={linkedin} alt="" /></a>
           </div>
 
           <img className='h-full w-full mb-[30px] max-md:hidden' src={line} alt="" />

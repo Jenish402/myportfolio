@@ -57,7 +57,7 @@ function Home() {
 
             <div className='flex flex-1 w-full items-center justify-between max-md:flex-col-reverse max-lg:gap-y-[30px] max-lg:gap-x-[40px] max-lg:items-start max-md:items-center max-md:justify-center'>
               <motion.div 
-              whileInView={{opacity: [0, 1], x: [-50, 10] }}
+              whileInView={{opacity: [0, 1], x: [-50, 0] }}
               transition={{ duration: 0.7 }}
               className='flex flex-col w-[700px] gap-y-[50px] max-lg:w-[500px] max-md:gap-y-[30px] max-md:w-full max-2xl:gap-y-[30px]'>
                 <h1 className='flex gap-x-[10px] text-[50px] max-lg:text-[35px] AD-font max-sm:text-[30px] max-2xl:text-[40px]'><p>Hi, I'm</p>

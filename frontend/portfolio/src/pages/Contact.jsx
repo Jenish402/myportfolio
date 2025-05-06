@@ -99,7 +99,7 @@ function Contact() {
             
             <header className='relative flex justify-between'>
                 <motion.h1 
-                whileInView={{opacity: [0, 1], x: [-50, 10] }}
+                whileInView={{opacity: [0, 1], x: [-50, 0] }}
                 transition={{ duration: 0.7 }}
                 className='relative text-[50px] max-sm:text-[60px] koulen-font'>CONTACT ME
                     <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[20px]' src={textline} alt="" />

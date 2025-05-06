@@ -48,7 +48,7 @@ function About() {
             <section className='flex flex-col gap-y-[30px] w-full'>
                 <header className='relative'>
                     <motion.h1 
-                    whileInView={{opacity: [0, 1], x: [-50, 10] }}
+                    whileInView={{opacity: [0, 1], x: [-50, 0] }}
                     transition={{ duration: 0.7 }}
                     className='relative text-[50px] max-sm:text-[40px] koulen-font'>ABOUT
                         <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
@@ -107,7 +107,7 @@ function About() {
             <section className='flex flex-col w-full mt-[100px] gap-y-[30px]'>
                 <div>
                     <motion.h1 
-                    whileInView={{opacity: [0, 1], x: [-50, 10] }}
+                    whileInView={{opacity: [0, 1], x: [-50, 0] }}
                     transition={{ duration: 0.7 }}
                     className='relative text-[50px] max-sm:text-[40px] koulen-font'>SKILLS
                         <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
@@ -119,7 +119,7 @@ function About() {
                     <div className='flex flex-col gap-y-[30px] w-full'>
                         {/* AI & ML Skills Carousel */}
                         <motion.div 
-                        whileInView={{opacity: [0, 1], x: [-500, 10] }}
+                        whileInView={{opacity: [0, 1], x: [-100, 0] }}
                         transition={{ duration: 0.7 }}
                         className='flex items-center w-full'>
                             <button
@@ -185,7 +185,7 @@ function About() {
                         {/* Web Development Skills */}
                         <div><h3 className='text-[25px] koulen-font'>Web Development Skills:</h3></div>
                         <motion.div 
-                        whileInView={{opacity: [0, 1], x: [200, -10] }}
+                        whileInView={{opacity: [0, 1], x: [200, 0] }}
                         transition={{ duration: 0.7 }}
                         className='flex items-center justify-between w-full'>
                             <button
