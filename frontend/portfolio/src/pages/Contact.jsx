@@ -3,6 +3,7 @@ import pinlogo from '../assets/pinlogo.png'
 import contactimage from '../assets/contactimage.png'
 import taplogo from '../assets/taplogo.png'
 import textline from '../assets/textline.png'
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function Contact() {
     // Initialize form data state
@@ -97,12 +98,18 @@ function Contact() {
             ></iframe>
             
             <header className='relative flex justify-between'>
-                <h1 className='relative text-[50px] max-sm:text-[60px] koulen-font'>CONTACT ME
+                <motion.h1 
+                whileInView={{opacity: [0, 1], x: [-50, 10] }}
+                transition={{ duration: 0.7 }}
+                className='relative text-[50px] max-sm:text-[60px] koulen-font'>CONTACT ME
                     <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[20px]' src={textline} alt="" />
-                </h1>
+                </motion.h1>
             </header>
 
-            <section className='education flex flex-col w-full p-[30px] border-[2px] border-black rounded-[50px] border-b-[20px] max-md:p-[15px]' aria-labelledby="say-hello-heading">
+            <motion.section 
+            whileInView={{ opacity: [0, 1], y: [40, 0] }}
+            transition={{ duration: 0.7 }}
+            className='education flex flex-col w-full p-[30px] border-[2px] border-black rounded-[50px] border-b-[20px] max-md:p-[15px]' aria-labelledby="say-hello-heading">
                 <div className='relative mb-[50px]'>
                     <h2 className='text-[40px] koulen-font'>SAY HELLO!</h2>
                     <img className='absolute top-[-40px] right-[-30px] h-[130px] max-lg:h-[80px] max-2xl:h-[100px]' src={pinlogo} alt="Pin icon beside heading" />
@@ -159,7 +166,7 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
         </section>
     )
 }

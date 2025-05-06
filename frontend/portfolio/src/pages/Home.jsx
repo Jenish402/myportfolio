@@ -3,64 +3,27 @@ import { Typewriter } from 'react-simple-typewriter';
 import { Helmet } from 'react-helmet'
 import Navbar from '../components/Navbar'
 import underline from '../assets/underline.png'
-import myphoto from '../assets/myphoto.png'
 import Underline from '../components/Underline'
 import About from './About'
 import Education from './Education'
 import Projects from './Projects'
 import Contact from '../pages/Contact'
 import Footer from '../components/Footer'
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import Lottie from 'lottie-react'
 import rightarrow from '../assets/right-arrow.json'
-import animatedcircle from '../assets/musicmod.json'
-import musicFile from "../assets/music.mp3";
-// import Lottie from 'lottie-react'
 import musiccircle from '../assets/musiccircle.json'
-import pc from '../assets/pc.json'
 import download from '../assets/download.json'
+import {motion} from 'framer-motion'
 
 function Home() {
 
   const audioRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
-
-  useEffect(() => {
-    const handleUserInteraction = () => {
-      if (!hasInteracted) {
-        audioRef.current.play()
-          .then(() => {
-            setIsPlaying(true);
-          })
-          .catch((e) => console.log("Autoplay blocked:", e));
-        setHasInteracted(true);
-      }
-    };
-
-    window.addEventListener("click", handleUserInteraction);
-    window.addEventListener("scroll", handleUserInteraction);
-
-    return () => {
-      window.removeEventListener("click", handleUserInteraction);
-      window.removeEventListener("scroll", handleUserInteraction);
-    };
-  }, [hasInteracted]);
-
-  const togglePlay = () => {
-    if (audioRef.current.paused) {
-      audioRef.current.play();
-      setIsPlaying(true);
-    } else {
-      audioRef.current.pause();
-      setIsPlaying(false);
-    }
-  };
 
 
   return (
-    <div className='w-full h-screen flex overflow-hidden fixed'>
+    <div className='w-full h-screen flex overflow-hidden fixed scroll-smooth'>
 
       <Helmet>
         <title>Jenish Soni | AI Engineer & Full Stack Developer</title>
@@ -83,8 +46,6 @@ function Home() {
         </div>
 
         <main className='main-right-container flex-1 flex-col h-screen w-full overflow-y-auto pl-[20px] pr-[20px] pb-[20px]'>
-
-
           {/* Hero section */}
           <section id='hero' className='min-h-screen flex flex-col'>
             <div className='mb-[50px] max-md:mb-[0px] max-2xl:mb-[40px]'>
@@ -95,8 +56,10 @@ function Home() {
             </div>
 
             <div className='flex flex-1 w-full items-center justify-between max-md:flex-col-reverse max-lg:gap-y-[30px] max-lg:gap-x-[40px] max-lg:items-start max-md:items-center max-md:justify-center'>
-              <div className='flex flex-col w-[700px] gap-y-[50px] max-lg:w-[500px] max-md:gap-y-[30px] max-md:w-full max-2xl:gap-y-[30px]'>
-                {/* <h1 className='text-[50px] max-lg:text-[35px] AD-font'>Hi, I'm JENISH SONI 👋</h1> */}
+              <motion.div 
+              whileInView={{opacity: [0, 1], x: [-50, 10] }}
+              transition={{ duration: 0.7 }}
+              className='flex flex-col w-[700px] gap-y-[50px] max-lg:w-[500px] max-md:gap-y-[30px] max-md:w-full max-2xl:gap-y-[30px]'>
                 <h1 className='flex gap-x-[10px] text-[50px] max-lg:text-[35px] AD-font max-sm:text-[30px] max-2xl:text-[40px]'><p>Hi, I'm</p>
                   <Typewriter
                     words={["JENISH SONI 👋", "AI Engineer", "Web Developer", "Tech Enthusiast"]}
@@ -133,23 +96,10 @@ function Home() {
                     </button>
                   </Link>
                 </div>
-              </div>
+              </motion.div>
 
               <div className='relative flex flex-col items-center '>
-                {/* <img className='h-[400px] w-auto object-contain' src={myphoto} alt="Portrait of Jenish Soni" /> */}
                 <Lottie animationData={musiccircle} loop={true}></Lottie>
-                {/* <Lottie className='absolute top-[150px] h-[200px]' animationData={pc} loop={true}></Lottie> */}
-
-                {/* <audio ref={audioRef} src={musicFile} loop preload="auto" />
-                  <button
-                    onClick={togglePlay}
-                    className='absolute bottom-[170px] left-[230px] border-[1px] border-black p-[12px] w-fit rounded-full koulen-font text-[20px] mb-[15px]'
-                  >
-                    {isPlaying ? <TbPlayerPauseFilled /> : <PiPlayFill />}
-                    <Lottie className='absolute w-[200px] left-[-75px] bottom-[100px]' animationData={musicstrip} loop={true}></Lottie>
-                    {/* <Lottie className='absolute top-[-200px]' animationData={musicnotes} loop={true}></Lottie> */}
-                {/* <Lottie className='absolute top-[-200px] left-[-100px]' animationData={musicnotes} loop={true}></Lottie> */}
-                {/*</button> */}
               </div>
             </div>
 
@@ -182,8 +132,6 @@ function Home() {
           <footer>
             <Footer />
           </footer>
-
-          {/* <Construction /> */}
         </main>
       </div>
     </div>

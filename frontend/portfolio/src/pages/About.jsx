@@ -19,8 +19,7 @@ import expresslogo from '../assets/expressjslogo.png'
 import htmlcsslogo from '../assets/htmlcsslogo.png'
 import tailwindcsslogo from '../assets/tailwindcsslogo.png'
 import nextjslogo from '../assets/nextjslogo.png'
-import Lottie from 'lottie-react';
-import tenserflow from '../assets/tenserflow.json'
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function About() {
     const aiSkillsRef = useRef(null);
@@ -36,8 +35,6 @@ function About() {
         }
     };
 
-
-
     return (
         <main className='flex flex-col w-full min-h-screen mt-0 pb-0'>
 
@@ -50,16 +47,22 @@ function About() {
 
             <section className='flex flex-col gap-y-[30px] w-full'>
                 <header className='relative'>
-                    <h1 className='relative text-[50px] max-sm:text-[40px] koulen-font'>ABOUT
+                    <motion.h1 
+                    whileInView={{opacity: [0, 1], x: [-50, 10] }}
+                    transition={{ duration: 0.7 }}
+                    className='relative text-[50px] max-sm:text-[40px] koulen-font'>ABOUT
                         <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
-                    </h1>
+                    </motion.h1>
                 </header>
 
-                <article className='relative about flex flex-col gap-y-[50px] p-[20px] w-full rounded-[60px] border-l-[2px] border-t-[2px] border-r-[2px] border-b-[20px] max-sm:border-[1px] max-sm:border-b-[10px]'>
+                <motion.article  
+                whileInView={{ opacity: [0, 1], y: [40, 0] }}
+                transition={{ duration: 0.7 }}
+                className='relative about flex flex-col gap-y-[50px] p-[20px] w-full rounded-[60px] border-l-[2px] border-t-[2px] border-r-[2px] border-b-[20px] max-sm:border-[1px] max-sm:border-b-[10px]'>
                     <img className='absolute right-0 top-0 max-lg:h-[80px] max-2xl:h-[100px]' src={pinlogo} alt="Pin icon decoration" />
                     <div className='flex justify-between gap-x-[30px] w-full max-sm:flex-col'>
-                        <div className='bg-[#C9C5B5] h-[400px] rounded-[50px] border-t-[2px] border-l-[2px] border-r-[2px] border-b-[20px] max-sm:border-b-[10px] max-sm:p-[0px] max-2xl:w-[400px]'>
-                            <img className='h-full w-full object-cover rounded-[30px]' src={myphoto} alt="Profile photo of the developer" />
+                        <div className='bg-[#C9C5B5] h-[400px] rounded-[50px] flex items-center justify-center w-fit border-t-[2px] border-l-[2px] border-r-[2px] border-b-[20px] max-sm:border-b-[10px] max-sm:p-[0px]'>
+                            <img className='h-full w-full object-cover rounded-[30px] max-2xl:w-[400px] max-sm:w-[330px]' src={myphoto} alt="Profile photo of the developer" />
                         </div>
                         <div className='w-[800px] max-md:w-full max-sm:mt-[20px]'>
                             <h1 className='text-[50px] max-lg:text-[35px] max-sm:text-[30px] koulen-font'>WHO AM I ?</h1>
@@ -98,21 +101,27 @@ function About() {
                             <li className='text-[30px] text-[#F16363] max-lg:text-[20px] koulen-font'>&ldquo;"Every line of code I write is a step towards building a smarter, more connected world."</li>
                         </ul>
                     </div>
-                </article>
+                </motion.article>
             </section>
 
             <section className='flex flex-col w-full mt-[100px] gap-y-[30px]'>
                 <div>
-                    <h1 className='relative text-[50px] max-sm:text-[40px] koulen-font'>SKILLS
+                    <motion.h1 
+                    whileInView={{opacity: [0, 1], x: [-50, 10] }}
+                    transition={{ duration: 0.7 }}
+                    className='relative text-[50px] max-sm:text-[40px] koulen-font'>SKILLS
                         <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
-                    </h1>
+                    </motion.h1>
                 </div>
 
                 <div className='flex flex-col w-full gap-y-[10px]'>
                     <div><h3 className='text-[25px] koulen-font'>AI & ML Skills:</h3></div>
                     <div className='flex flex-col gap-y-[30px] w-full'>
                         {/* AI & ML Skills Carousel */}
-                        <div className='flex items-center w-full'>
+                        <motion.div 
+                        whileInView={{opacity: [0, 1], x: [-500, 10] }}
+                        transition={{ duration: 0.7 }}
+                        className='flex items-center w-full'>
                             <button
                                 onClick={() => scroll(aiSkillsRef, 'left')}
                                 className='flex-shrink-0  cursor-pointer hover:bg-gray-100 rounded-full'
@@ -171,11 +180,14 @@ function About() {
                             >
                                 <IoIosArrowForward className='text-[30px]' />
                             </button>
-                        </div>
+                        </motion.div>
 
                         {/* Web Development Skills */}
                         <div><h3 className='text-[25px] koulen-font'>Web Development Skills:</h3></div>
-                        <div className='flex items-center justify-between w-full'>
+                        <motion.div 
+                        whileInView={{opacity: [0, 1], x: [200, -10] }}
+                        transition={{ duration: 0.7 }}
+                        className='flex items-center justify-between w-full'>
                             <button
                                 onClick={() => scroll(webSkillsRef, 'left')}
                                 className='flex-shrink-0  cursor-pointer hover:bg-gray-100 rounded-full'
@@ -232,12 +244,12 @@ function About() {
                             >
                                 <IoIosArrowForward className='text-[30px]' />
                             </button>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>
         </main>
     )
-}
 
+}
 export default About

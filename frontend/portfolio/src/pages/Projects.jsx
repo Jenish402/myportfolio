@@ -6,7 +6,7 @@ import projectimage from '../assets/projectimage.png'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import { IoIosArrowRoundForward } from "react-icons/io";
-
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function Projects() {
     // Create separate refs for each scrollable section
@@ -40,9 +40,12 @@ function Projects() {
         <section className='flex flex-col w-full gap-y-[40px]' aria-label="Projects Section">
             <header className='flex w-full items-center justify-between'>
                 <div className='relative flex justify-between'>
-                    <h1 className='relative text-[50px] max-sm:text-[40px] koulen-font'>PROJECTS
+                    <motion.h1 
+                    whileInView={{opacity: [0, 1], x: [-50, 10] }}
+                    transition={{ duration: 0.7 }}
+                    className='relative text-[50px] max-sm:text-[40px] koulen-font'>PROJECTS
                         <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
-                    </h1>
+                    </motion.h1>
                 </div>
                 <div className='flex items-center cursor-pointer' >
                     <Link to='/underconstruction' className='AD-font max-sm:text-[15px]'>View more</Link>
@@ -53,7 +56,10 @@ function Projects() {
             <section className='flex flex-col gap-y-[30px] w-full' aria-labelledby="ai-ml-projects-title">
 
                 {/* First Carousel - AI/ML Projects */}
-                <div className='flex items-center'>
+                <motion.div 
+                whileInView={{opacity: [0, 1], x: [-500, 10] }}
+                transition={{ duration: 0.7 }}
+                className='flex items-center'>
                     <button
                         onClick={() => scroll(aiSkillsRef, 'left')}
                         className='flex-shrink-0 z-10 cursor-pointer hover:bg-gray-100 rounded-full h-fit'
@@ -184,10 +190,13 @@ function Projects() {
                     >
                         <IoIosArrowForward className='text-[30px]' />
                     </button>
-                </div>
+                </motion.div>
 
                 {/* Second Carousel - Web Development Projects */}
-                <div className='flex items-center'>
+                <motion.div 
+                whileInView={{opacity: [0, 1], x: [200, -10] }}
+                transition={{ duration: 0.7 }}
+                className='flex items-center'>
                     <button
                         onClick={() => scroll(webSkillsRef, 'left')}
                         className='flex-shrink-0 z-10 cursor-pointer hover:bg-gray-100 rounded-full h-fit'
@@ -318,7 +327,7 @@ function Projects() {
                     >
                         <IoIosArrowForward className='text-[30px]' />
                     </button>
-                </div>
+                </motion.div>
 
             </section>
         </section>
