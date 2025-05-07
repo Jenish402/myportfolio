@@ -121,7 +121,7 @@ function Navbar() {
           <img className='h-full w-full mb-[30px] max-md:hidden' src={line} alt="" />
 
           <a href="./jenishsoniresume-1.pdf" target="_blank" rel="noopener noreferrer">
-            <button className='flex items-center AD-font border-t-[2px] border-l-[2px] border-r-[2px] cursor-pointer border-b-[10px] rounded-[18px] py-[15px] px-[30px] max-lg:py-[8px] max-lg:px-[15px] max-lg:border-b-[8px] max-md:text-[15px] max-md:border-b-[5px] max-md:border-l-[1px] max-md:border-t-[1px] max-md:border-r-[1px] max-sm:text-[10px] max-sm:rounded-[10px]'>
+            <button className='hover:text-shadow-lg/30 hover:shadow-[inset_-12px_-8px_40px_#46464620] duration-300 flex items-center AD-font border-t-[2px] border-l-[2px] border-r-[2px] cursor-pointer border-b-[10px] rounded-[18px] py-[15px] px-[30px] max-lg:py-[8px] max-lg:px-[15px] max-lg:border-b-[8px] max-md:text-[15px] max-md:border-b-[5px] max-md:border-l-[1px] max-md:border-t-[1px] max-md:border-r-[1px] max-sm:text-[10px] max-sm:rounded-[10px]'>
               <p>Download CV</p>
               <Lottie className='h-[40px] max-sm:h-[25px]' animationData={download} loop={true}></Lottie>
             </button>

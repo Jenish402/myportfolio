@@ -14,7 +14,8 @@ import Lottie from 'lottie-react'
 import rightarrow from '../assets/right-arrow.json'
 import musiccircle from '../assets/musiccircle.json'
 import download from '../assets/download.json'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import linescratch from '../assets/linescratch.png'
 
 function Home() {
 
@@ -56,10 +57,10 @@ function Home() {
             </div>
 
             <div className='flex flex-1 w-full items-center justify-between max-md:flex-col-reverse max-lg:gap-y-[30px] max-lg:gap-x-[40px] max-lg:items-start max-md:items-center max-md:justify-center'>
-              <motion.div 
-              whileInView={{opacity: [0, 1], x: [-50, 0] }}
-              transition={{ duration: 0.7 }}
-              className='flex flex-col w-[700px] gap-y-[50px] max-lg:w-[500px] max-md:gap-y-[30px] max-md:w-full max-2xl:gap-y-[30px]'>
+              <motion.div
+                whileInView={{ opacity: [0, 1], x: [-50, 0] }}
+                transition={{ duration: 0.7 }}
+                className='flex flex-col w-[700px] gap-y-[50px] max-lg:w-[500px] max-md:gap-y-[30px] max-md:w-full max-2xl:gap-y-[30px]'>
                 <h1 className='flex gap-x-[10px] text-[50px] max-lg:text-[35px] AD-font max-sm:text-[30px] max-2xl:text-[40px]'><p>Hi, I'm</p>
                   <Typewriter
                     words={["JENISH SONI 👋", "AI Engineer", "Web Developer", "Tech Enthusiast"]}
@@ -73,17 +74,16 @@ function Home() {
                 </h1>
 
                 <p className='text-justify max-lg:text-[15px] AD-font'>
-                  An enthusiastic AI Engineer and Full Stack Developer, passionate about building intelligent systems and dynamic web applications. <br /> <br />
+                  Hey there! I’m an AI Engineer and Full Stack Developer who’s super passionate about building smart systems and sleek, responsive web apps. <br /> <br />
 
-                  I combine the power of artificial intelligence with robust web technologies to deliver scalable and impactful solutions.
-                  With a strong foundation in Machine Learning, Deep Learning, and MERN Stack Development, I aim to bridge the gap between data-driven intelligence and user-centric design. <br /><br />
+                  I love blending AI with modern web tech to create solutions that are not just powerful, but also practical and user-friendly. With hands-on experience in machine learning, deep learning, and the MERN stack, I enjoy turning complex data into something useful and engaging. <br /><br />
 
-                  Let's innovate, build, and create the future together.
+                  Let’s connect, create, and bring cool ideas to life!
                 </p>
 
                 <div className='flex gap-x-[30px] items-center'>
                   <a href="./jenishsoniresume-1.pdf" target="_blank" rel="noopener noreferrer">
-                    <button className='flex items-center cursor-pointer AD-font border-t-[2px] border-l-[2px] border-r-[2px] border-b-[10px] rounded-[18px] py-[15px] px-[30px] max-lg:py-[8px] max-lg:px-[15px] max-lg:border-b-[8px] max-md:text-[20px] max-md:border-b-[5px] max-md:border-l-[1px] max-md:border-t-[1px] max-md:border-r-[1px] max-sm:text-[12px] max-sm:rounded-[10px] max-2xl:px-[25px] max-2xl:py-[12px]'>
+                    <button className='hover:text-shadow-lg/30 hover:shadow-[inset_-12px_-8px_50px_#46464620]  hover:duration-500 flex items-center cursor-pointer AD-font border-t-[2px] border-l-[2px] border-r-[2px] border-b-[10px] rounded-[18px] py-[15px] px-[30px] max-lg:py-[8px] max-lg:px-[15px] max-lg:border-b-[8px] max-md:text-[20px] max-md:border-b-[5px] max-md:border-l-[1px] max-md:border-t-[1px] max-md:border-r-[1px] max-sm:text-[12px] max-sm:rounded-[10px] max-2xl:px-[25px] max-2xl:py-[12px]'>
                       <p>Download CV</p>
                       <Lottie className='h-[40px] max-sm:h-[25px] max-2xl:h-[30px]' animationData={download} loop={true}></Lottie>
                     </button>
@@ -91,7 +91,9 @@ function Home() {
 
                   <Link to={'/underconstruction'}>
                     <button className='flex items-center w-fit cursor-pointer relative text-[18px] AD-font'>
-                      <p className='max-sm:text-[12px]'>View my work</p>
+                      <p className='relative max-sm:text-[12px]'>View my work
+                        <img className='absolute w-[70px]' src={linescratch} alt="" />
+                      </p>
                       <Lottie className='h-[50px] max-sm:h-[40px] ' animationData={rightarrow} loop={true}></Lottie>
                     </button>
                   </Link>

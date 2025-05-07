@@ -80,7 +80,7 @@ function Projects() {
                                     <p className='max-sm:text-[12px] AD-font'>Web</p>
                                 </div>
                                 <div>
-                                    <img className='max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
+                                    <img className='w-[70px] max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
                                 </div>
                                 <div className='flex items-center gap-x-[10px] max-sm:gap-x-[5px]'>
                                     <FaRegClock />
@@ -104,7 +104,7 @@ function Projects() {
                                     <p className='max-sm:text-[12px] AD-font'>Web</p>
                                 </div>
                                 <div>
-                                    <img className='max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
+                                    <img className='w-[70px] max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
                                 </div>
                                 <div className='flex items-center gap-x-[10px] max-sm:gap-x-[5px]'>
                                     <FaRegClock />
@@ -128,7 +128,7 @@ function Projects() {
                                     <p className='max-sm:text-[12px] AD-font'>Web</p>
                                 </div>
                                 <div>
-                                    <img className='max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
+                                    <img className='w-[70px] max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
                                 </div>
                                 <div className='flex items-center gap-x-[10px] max-sm:gap-x-[5px]'>
                                     <FaRegClock />
@@ -152,7 +152,7 @@ function Projects() {
                                     <p className='max-sm:text-[12px] AD-font'>Web</p>
                                 </div>
                                 <div>
-                                    <img className='max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
+                                    <img className='w-[70px] max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
                                 </div>
                                 <div className='flex items-center gap-x-[10px] max-sm:gap-x-[5px]'>
                                     <FaRegClock />
