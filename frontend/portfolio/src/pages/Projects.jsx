@@ -7,6 +7,11 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion, useScroll, useTransform } from "framer-motion";
+import glintphoto from '../assets/glintphoto.png'
+import shreejiphoto from '../assets/shreejiphoto.png'
+import awsphoto from '../assets/awsphoto.png'
+import astraphoto from '../assets/astraphoto.png'
+import { IoIosArrowDropright } from "react-icons/io";
 
 function Projects() {
     // Create separate refs for each scrollable section
@@ -57,8 +62,8 @@ function Projects() {
 
                 {/* First Carousel - AI/ML Projects */}
                 <motion.div 
-                whileInView={{opacity: [0, 1], x: [-100, 0] }}
-                transition={{ duration: 0.7 }}
+                // whileInView={{opacity: [0, 1], x: [-100, 0] }}
+                // transition={{ duration: 0.7 }}
                 className='flex items-center'>
                     <button
                         onClick={() => scroll(aiSkillsRef, 'left')}
@@ -72,26 +77,99 @@ function Projects() {
                             <div className='flex items-center justify-between px-[20px] py-[10px] max-sm:px-[10px]'>
                                 <div className='flex items-center max-sm:gap-x-[5px]'>
                                     <FaRegFolderClosed />
-                                    <p className='max-sm:text-[12px] AD-font'>AI/ML</p>
+                                    <p className='max-sm:text-[12px] AD-font'>Web</p>
                                 </div>
                                 <div>
                                     <img className='max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
                                 </div>
                                 <div className='flex items-center gap-x-[10px] max-sm:gap-x-[5px]'>
                                     <FaRegClock />
-                                    <p className='max-sm:text-[12px] AD-font'>september 10, 2024</p>
+                                    <p className='max-sm:text-[12px] AD-font'>August, 2024</p>
                                 </div>
                             </div>
 
                             <div>
-                                <img className='rounded-tl-[20px] rounded-tr-[20px] border-b-[5px] border-black' src={projectimage} alt="" />
+                                <img className='rounded-tl-[20px] h-[350px] object-cover rounded-tr-[20px] border-b-[5px] border-black' src={glintphoto} alt="" />
                             </div>
-                            <div className='p-[10px]'>
-                                <h3 className='text-[25px] max-sm:text-[20px] koulen-font'>ANOMALY DETECTION</h3>
+                            <div className='p-[10px] flex items-center justify-between'>
+                                <h3 className='text-[25px] max-sm:text-[20px] koulen-font'>glint</h3>
+                                <IoIosArrowDropright className='text-[30px] cursor-pointer hover:text-red-800'/>
                             </div>
                         </div>
 
                         <div className='flex flex-col min-w-[350px] border-[3px] border-black rounded-[20px] border-b-[15px] max-md:min-w-[300px] max-md:h-fit max-sm:min-w-[200px]'>
+                            <div className='flex items-center justify-between px-[20px] py-[10px] max-sm:px-[10px]'>
+                                <div className='flex items-center max-sm:gap-x-[5px]'>
+                                    <FaRegFolderClosed />
+                                    <p className='max-sm:text-[12px] AD-font'>Web</p>
+                                </div>
+                                <div>
+                                    <img className='max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
+                                </div>
+                                <div className='flex items-center gap-x-[10px] max-sm:gap-x-[5px]'>
+                                    <FaRegClock />
+                                    <p className='max-sm:text-[12px] AD-font'>March, 2023</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <img className='rounded-tl-[20px] h-[350px] object-cover rounded-tr-[20px] border-b-[5px] border-black' src={shreejiphoto} alt="" />
+                            </div>
+                            <div className='p-[10px] flex items-center justify-between'>
+                                <h3 className='text-[25px] max-sm:text-[20px] koulen-font'>Shreeji Education</h3>
+                                <IoIosArrowDropright className='text-[30px] cursor-pointer hover:text-red-800'/>
+                            </div>
+                        </div>
+
+                        <div className='flex flex-col min-w-[350px] border-[3px] border-black rounded-[20px] border-b-[15px] max-md:min-w-[300px] max-md:h-fit max-sm:min-w-[200px]'>
+                            <div className='flex items-center justify-between px-[20px] py-[10px] max-sm:px-[10px]'>
+                                <div className='flex items-center max-sm:gap-x-[5px]'>
+                                    <FaRegFolderClosed />
+                                    <p className='max-sm:text-[12px] AD-font'>Web</p>
+                                </div>
+                                <div>
+                                    <img className='max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
+                                </div>
+                                <div className='flex items-center gap-x-[10px] max-sm:gap-x-[5px]'>
+                                    <FaRegClock />
+                                    <p className='max-sm:text-[12px] AD-font'>June, 2023</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <img className='rounded-tl-[20px] h-[350px] object-cover rounded-tr-[20px] border-b-[5px] border-black' src={awsphoto} alt="" />
+                            </div>
+                            <div className='p-[10px] flex items-center justify-between'>
+                                <h3 className='text-[25px] max-sm:text-[20px] koulen-font'>AWS Cloud CLUB SOU</h3>
+                                <IoIosArrowDropright className='text-[30px] cursor-pointer hover:text-red-800'/>
+                            </div>
+                        </div>
+
+                        <div className='flex flex-col min-w-[350px] border-[3px] border-black rounded-[20px] border-b-[15px] max-md:min-w-[300px] max-md:h-fit max-sm:min-w-[200px]'>
+                            <div className='flex items-center justify-between px-[20px] py-[10px] max-sm:px-[10px]'>
+                                <div className='flex items-center max-sm:gap-x-[5px]'>
+                                    <FaRegFolderClosed />
+                                    <p className='max-sm:text-[12px] AD-font'>Web</p>
+                                </div>
+                                <div>
+                                    <img className='max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
+                                </div>
+                                <div className='flex items-center gap-x-[10px] max-sm:gap-x-[5px]'>
+                                    <FaRegClock />
+                                    <p className='max-sm:text-[12px] AD-font'>January, 2025</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <img className='rounded-tl-[20px] h-[350px] object-cover rounded-tr-[20px] border-b-[5px] border-black' src={astraphoto} alt="" />
+                            </div>
+                            <div className='p-[10px] flex items-center justify-between'>
+                                <h3 className='text-[25px] max-sm:text-[20px] koulen-font'>Project Astra</h3>
+                                <IoIosArrowDropright className='text-[30px] cursor-pointer hover:text-red-800'/>
+                            </div>
+                        </div>
+
+                        {/* <div className='flex flex-col min-w-[350px] border-[3px] border-black rounded-[20px] border-b-[15px] max-md:min-w-[300px] max-md:h-fit max-sm:min-w-[200px]'>
                             <div className='flex items-center justify-between px-[20px] py-[10px] max-sm:px-[10px]'>
                                 <div className='flex items-center max-sm:gap-x-[5px]'>
                                     <FaRegFolderClosed />
@@ -112,76 +190,7 @@ function Projects() {
                             <div className='p-[10px]'>
                                 <h3 className='text-[25px] max-sm:text-[20px] koulen-font'>ANOMALY DETECTION</h3>
                             </div>
-                        </div>
-
-                        <div className='flex flex-col min-w-[350px] border-[3px] border-black rounded-[20px] border-b-[15px] max-md:min-w-[300px] max-md:h-fit max-sm:min-w-[200px]'>
-                            <div className='flex items-center justify-between px-[20px] py-[10px] max-sm:px-[10px]'>
-                                <div className='flex items-center max-sm:gap-x-[5px]'>
-                                    <FaRegFolderClosed />
-                                    <p className='max-sm:text-[12px] AD-font'>AI/ML</p>
-                                </div>
-                                <div>
-                                    <img className='max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
-                                </div>
-                                <div className='flex items-center gap-x-[10px] max-sm:gap-x-[5px]'>
-                                    <FaRegClock />
-                                    <p className='max-sm:text-[12px] AD-font'>september 10, 2024</p>
-                                </div>
-                            </div>
-
-                            <div>
-                                <img className='rounded-tl-[20px] rounded-tr-[20px] border-b-[5px] border-black' src={projectimage} alt="" />
-                            </div>
-                            <div className='p-[10px]'>
-                                <h3 className='text-[25px] max-sm:text-[20px] koulen-font'>ANOMALY DETECTION</h3>
-                            </div>
-                        </div>
-
-                        <div className='flex flex-col min-w-[350px] border-[3px] border-black rounded-[20px] border-b-[15px] max-md:min-w-[300px] max-md:h-fit max-sm:min-w-[200px]'>
-                            <div className='flex items-center justify-between px-[20px] py-[10px] max-sm:px-[10px]'>
-                                <div className='flex items-center max-sm:gap-x-[5px]'>
-                                    <FaRegFolderClosed />
-                                    <p className='max-sm:text-[12px] AD-font'>AI/ML</p>
-                                </div>
-                                <div>
-                                    <img className='max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
-                                </div>
-                                <div className='flex items-center gap-x-[10px] max-sm:gap-x-[5px]'>
-                                    <FaRegClock />
-                                    <p className='max-sm:text-[12px] AD-font'>september 10, 2024</p>
-                                </div>
-                            </div>
-
-                            <div>
-                                <img className='rounded-tl-[20px] rounded-tr-[20px] border-b-[5px] border-black' src={projectimage} alt="" />
-                            </div>
-                            <div className='p-[10px]'>
-                                <h3 className='text-[25px] max-sm:text-[20px] koulen-font'>ANOMALY DETECTION</h3>
-                            </div>
-                        </div>
-
-                        <div className='flex flex-col min-w-[350px] border-[3px] border-black rounded-[20px] border-b-[15px] max-md:min-w-[300px] max-md:h-fit max-sm:min-w-[200px]'>
-                            <div className='flex items-center justify-between px-[20px] py-[10px] max-sm:px-[10px]'>
-                                <div className='flex items-center max-sm:gap-x-[5px]'>
-                                    <FaRegFolderClosed />
-                                    <p className='max-sm:text-[12px] AD-font'>AI/ML</p>
-                                </div>
-                                <div>
-                                    <img className='max-md:w-[40px] max-sm:hidden' src={linescratch} alt="" />
-                                </div>
-                                <div className='flex items-center gap-x-[10px] max-sm:gap-x-[5px]'>
-                                    <FaRegClock />
-                                    <p className='max-sm:text-[12px] AD-font'>september 10, 2024</p>
-                                </div>
-                            </div>
-
-                            <div>
-                                <img className='rounded-tl-[20px] rounded-tr-[20px] border-b-[5px] border-black' src={projectimage} alt="" />
-                            </div>
-                            <div className='p-[10px]'>
-                                <h3 className='text-[25px] max-sm:text-[20px] koulen-font'>ANOMALY DETECTION</h3>
-                            </div>
-                        </div>
+                        </div> */}
                     </div>
                     <button
                         onClick={() => scroll(aiSkillsRef, 'right')}
@@ -193,9 +202,9 @@ function Projects() {
                 </motion.div>
 
                 {/* Second Carousel - Web Development Projects */}
-                <motion.div 
-                whileInView={{opacity: [0, 1], x: [200, 0] }}
-                transition={{ duration: 0.7 }}
+                {/* <motion.div 
+                // whileInView={{opacity: [0, 1], x: [200, 0] }}
+                // transition={{ duration: 0.7 }}
                 className='flex items-center'>
                     <button
                         onClick={() => scroll(webSkillsRef, 'left')}
@@ -327,7 +336,7 @@ function Projects() {
                     >
                         <IoIosArrowForward className='text-[30px]' />
                     </button>
-                </motion.div>
+                </motion.div> */}
 
             </section>
         </section>

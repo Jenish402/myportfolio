@@ -119,8 +119,8 @@ function About() {
                     <div className='flex flex-col gap-y-[30px] w-full'>
                         {/* AI & ML Skills Carousel */}
                         <motion.div 
-                        whileInView={{opacity: [0, 1], x: [-100, 0] }}
-                        transition={{ duration: 0.7 }}
+                        // whileInView={{opacity: [0, 1], x: [-100, 0] }}
+                        // transition={{ duration: 0.7 }}
                         className='flex items-center w-full'>
                             <button
                                 onClick={() => scroll(aiSkillsRef, 'left')}
@@ -132,10 +132,11 @@ function About() {
                             <div className='w-full overflow-hidden'>
                                 <ul
                                     ref={aiSkillsRef}
-                                    className='flex items-center justify-between gap-x-[20px] overflow-x-auto w-full pb-4 scrollbar-hide'
+                                    className='flex items-center justify-between gap-x-[20px] overflow-x-auto w-full p-4 scrollbar-hide'
                                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                                 >
-                                    <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
+                                    <li
+                                    className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Python</p>
                                         <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={pythonlogo} alt="Python logo" /></div>
                                     </li>
@@ -185,8 +186,8 @@ function About() {
                         {/* Web Development Skills */}
                         <div><h3 className='text-[25px] koulen-font'>Web Development Skills:</h3></div>
                         <motion.div 
-                        whileInView={{opacity: [0, 1], x: [200, 0] }}
-                        transition={{ duration: 0.7 }}
+                        // whileInView={{opacity: [0, 1], x: [200, 0] }}
+                        // transition={{ duration: 0.7 }}
                         className='flex items-center justify-between w-full'>
                             <button
                                 onClick={() => scroll(webSkillsRef, 'left')}
@@ -198,40 +199,66 @@ function About() {
                             <div className='w-full overflow-hidden'>
                                 <ul
                                     ref={webSkillsRef}
-                                    className='flex items-center justify-between gap-x-[20px] overflow-x-auto w-full pb-4 scrollbar-hide'
+                                    className='flex items-center justify-between gap-x-[20px] overflow-x-auto w-full pt-[20px] pb-4 scrollbar-hide'
                                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                                 >
-                                    <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
+                                    <li 
+                                    className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>React</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={reactlogo} alt="React logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><motion.img 
+                                        animate={{ rotate: 360 }}
+                                        transition={{
+                                          repeat: Infinity,
+                                          duration: 5,
+                                          ease: "linear"
+                                        }}
+                                        className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={reactlogo} alt="React logo" /></div>
                                     </li>
 
-                                    <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
+                                    <li 
+                                    animate={{ y: [0, -10, 0] }}
+                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                    className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Node.js</p>
                                         <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={nodejslogo} alt="Node.js logo" /></div>
                                     </li>
 
-                                    <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
+                                    <li 
+                                    animate={{ y: [0, -10, 0] }}
+                                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                                    className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>MongoDB</p>
                                         <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={mongodblogo} alt="MongoDB logo" /></div>
                                     </li>
 
-                                    <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
+                                    <li 
+                                    animate={{ y: [0, -10, 0] }}
+                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                    className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Express</p>
                                         <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={expresslogo} alt="Express logo" /></div>
                                     </li>
 
-                                    <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
+                                    <li 
+                                    animate={{ y: [0, -10, 0] }}
+                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                    className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>HTML/CSS</p>
                                         <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={htmlcsslogo} alt="HTML/CSS logo" /></div>
                                     </li>
 
-                                    <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
+                                    <li 
+                                    animate={{ y: [0, -10, 0] }}
+                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                    className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Tailwind</p>
                                         <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={tailwindcsslogo} alt="TailwindCSS logo" /></div>
                                     </li>
 
-                                    <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
+                                    <li 
+                                    animate={{ y: [0, -10, 0] }}
+                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                    className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Next.js</p>
                                         <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={nextjslogo} alt="Next.js logo" /></div>
                                     </li>
