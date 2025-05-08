@@ -192,7 +192,7 @@ function About() {
                             <div className='w-full overflow-hidden'>
                                 <ul
                                     ref={webSkillsRef}
-                                    className='flex items-center justify-between gap-x-[20px] overflow-x-auto w-full scrollbar-hide'
+                                    className='flex items-center justify-between gap-x-[20px] overflow-x-auto w-full scrollbar-hide overflow-y-hidden'
                                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                                 >
                                     <li 

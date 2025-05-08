@@ -9,6 +9,7 @@ import menu from '../assets/menu.png'
 import { PiArrowBendDownRightBold } from "react-icons/pi";
 import Lottie from 'lottie-react'
 import download from '../assets/download.json'
+import { motion } from 'framer-motion'
 
 
 function Navbar() {
@@ -56,7 +57,7 @@ function Navbar() {
 
 
   return (
-    <nav className='z-[100] sticky top-0 w-[350px] h-screen flex flex-col items-center p-[20px] max-md:w-screen max-md:h-[130px] max-md:pt-[20px] max-md:pb-[150px] max-sm:pb-[0px] max-lg:w-[220px]'>
+    <nav className='z-[100] sticky top-0 w-[350px] h-screen flex flex-col items-center p-[20px] max-md:w-screen max-sm:h-[170px] max-md:h-[210px] max-md:pt-[20px] max-md:pb-[150px] max-sm:pb-[0px] max-lg:w-[220px]'>
       <div className='flex flex-col items-center w-full max-lg:items-start'>
         <div className='pt-[50px] mb-[50px] flex items-center w-full max-md:mb-[10px] max-lg:pt-[20px] max-lg:justify-between max-md:pt-[0px] max-2xl:mb-[20px]'>
           <img className='h-[60px] w-auto max-lg:h-[50px] max-sm:h-[35px]' src={jenishlogo} alt="JENISH" />
@@ -69,10 +70,15 @@ function Navbar() {
             />
 
             {isOpen && (
-              <div className="fixed inset-0 bg-black/30">
+              <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="fixed inset-0 bg-black/30">
                 <ul
                   ref={menuRef}
-                  className=" z-[1000] absolute top-[40px] right-0 bg-[#C9C5B5] h-fit w-fit flex flex-col gap-y-[10px] p-[20px] border-b-[7px] items-start pr-[60px] border-[2px] border-black rounded-[20px] koulen-font md:hidden max-md:right-[20px] max-md:top-[60px]"
+                  className=" z-[1000] absolute top-[40px] right-0 bg-[#C9C5B5] h-fit w-fit flex flex-col gap-y-[10px] p-[20px] border-b-[7px] items-start pr-[60px] border-[2px] border-black rounded-[20px] koulen-font md:hidden max-md:right-[70px] max-md:top-[10px] max-md:gap-y-[0px] max-md:py-[5px] max-md:text-[15px]"
                 >
                   <li onClick={() => setIsOpen(false)}><a href="/#hero">Home</a></li>
                   <li onClick={() => setIsOpen(false)}><a href="/#about">About</a></li>
@@ -80,7 +86,7 @@ function Navbar() {
                   <li onClick={() => setIsOpen(false)}><a href="/#projects">Projects</a></li>
                   <li onClick={() => setIsOpen(false)}><a href="/#contact">Contact</a></li>
                 </ul>
-              </div>
+              </motion.div>
             )}
 
           </div>
