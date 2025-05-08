@@ -14,7 +14,7 @@ function Education() {
         <section className='relative w-full' aria-labelledby="education-title">
 
             <Helmet>
-                <title>Education - Academic Background | My Portfolio</title>
+                <title>JENISH SONI - AI Engineer | Web Developer</title>
                 <meta name="description" content="Explore my academic background including B.Tech, HSC, and SSC with performance details and institutions attended." />
                 <meta name="keywords" content="education, academic, background, SSC, HSC, B.Tech, CGPA, Silver Oak University" />
             </Helmet>
