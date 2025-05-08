@@ -57,7 +57,7 @@ function Navbar() {
 
 
   return (
-    <nav className='z-[100] sticky top-0 w-[350px] h-screen flex flex-col items-center p-[20px] max-md:w-screen max-sm:h-[170px] max-md:h-[210px] max-md:pt-[20px] max-md:pb-[150px] max-sm:pb-[0px] max-lg:w-[220px]'>
+    <nav className='z-[100] sticky top-0 w-[350px] h-screen flex flex-col items-center p-[20px] max-md:w-screen max-sm:h-[155px] max-md:h-[210px] max-md:pt-[20px] max-md:pb-[150px] max-sm:pb-[0px] max-lg:w-[220px] max-sm:pt-[35px]'>
       <div className='flex flex-col items-center w-full max-lg:items-start'>
         <div className='pt-[50px] mb-[50px] flex items-center w-full max-md:mb-[10px] max-lg:pt-[20px] max-lg:justify-between max-md:pt-[0px] max-2xl:mb-[20px]'>
           <img className='h-[60px] w-auto max-lg:h-[50px] max-sm:h-[35px]' src={jenishlogo} alt="JENISH" />
