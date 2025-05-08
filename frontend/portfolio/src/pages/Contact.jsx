@@ -101,8 +101,8 @@ function Contact() {
                 <motion.h1 
                 whileInView={{opacity: [0, 1], x: [-50, 0] }}
                 transition={{ duration: 0.7 }}
-                className='relative text-[50px] max-sm:text-[60px] koulen-font'>CONTACT ME
-                    <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[20px]' src={textline} alt="" />
+                className='relative text-[50px] max-sm:text-[40px] koulen-font'>CONTACT ME
+                    <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[0px]' src={textline} alt="" />
                 </motion.h1>
             </header>
 

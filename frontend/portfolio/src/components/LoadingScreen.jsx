@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import js from '../assets/js.png';
+import React, { useEffect } from 'react';
+import jenishsoni from '../assets/jenishsoni.png';
 
 function LoadingScreen({ onFinish }) {
   useEffect(() => {
@@ -12,7 +12,7 @@ function LoadingScreen({ onFinish }) {
 
   return (
     <div className="loading-container">
-      <img src={js} alt="loading" className="loading-image" />
+      <img src={jenishsoni} alt="loading" className="loading-image" />
     </div>
   );
 }

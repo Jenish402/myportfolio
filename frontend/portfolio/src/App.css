@@ -106,3 +106,14 @@ html {
   }
 }
 
+/* Hide scrollbar for all scrollable elements with scrollbar-hide class */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari and Opera */
+}
+
+
