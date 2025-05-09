@@ -1,20 +1,26 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState, Suspense, lazy } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import { Helmet } from 'react-helmet'
-import Navbar from '../components/Navbar'
-import underline from '../assets/underline.svg'
-import Underline from '../components/Underline'
-import About from './About'
-import Education from './Education'
-import Projects from './Projects'
-import Contact from '../pages/Contact'
-import Footer from '../components/Footer'
-import { Link } from 'react-router-dom'
-import Lottie from 'lottie-react'
-import rightarrow from '../assets/right-arrow.json'
-import download from '../assets/download.json'
-import { motion } from 'framer-motion'
-import linescratch from '../assets/linescratch.webp'
+import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import Lottie from 'lottie-react';
+import { motion } from 'framer-motion';
+
+import underline from '../assets/underline.svg';
+import rightarrow from '../assets/right-arrow.json';
+import download from '../assets/download.json';
+import linescratch from '../assets/linescratch.webp';
+// import { OrbitingCircles } from '../components/OrbitingCircles';
+import {OrbitingCirclesDemo} from '../components/OrbitingCirclesDemo';
+// import { File,Search, Settings } from 'lucide-react';
+
+// Lazy-loaded components
+const Navbar = lazy(() => import('../components/Navbar'));
+const Underline = lazy(() => import('../components/Underline'));
+const About = lazy(() => import('./About'));
+const Education = lazy(() => import('./Education'));
+const Projects = lazy(() => import('./Projects'));
+const Contact = lazy(() => import('../pages/Contact'));
+const Footer = lazy(() => import('../components/Footer'));
 
 function Home() {
 
@@ -47,11 +53,11 @@ function Home() {
             <div className='mb-[50px] max-md:mb-[0px] max-2xl:mb-[40px]'>
               <h1 className='pt-[70px] text-[25px] max-md:pt-[30px] AD-font'>
                 Welcome to my portfolio
-                <img className='h-auto w-[150px]' src={underline} alt="Stylish underline graphic" />
+                <img className='h-auto w-[150px]' loading='lazy' src={underline} alt="Stylish underline graphic" />
               </h1>
             </div>
 
-            <div className='flex w-full items-center justify-between max-md:flex-col-reverse max-lg:gap-y-[30px] max-lg:gap-x-[40px] max-lg:items-start max-md:items-center max-md:justify-center'>
+            <div className='flex w-full items-center justify-between max-lg:flex-col max-lg:gap-y-[30px] max-lg:gap-x-[40px] max-lg:items-start max-md:items-center max-md:justify-center'>
               <motion.div
                 whileInView={{ opacity: [0, 1], x: [-50, 0] }}
                 transition={{ duration: 0.7 }}
@@ -87,7 +93,7 @@ function Home() {
                   <Link to={'/underconstruction'}>
                     <button className='flex items-center w-fit cursor-pointer relative text-[18px] AD-font'>
                       <p className='relative max-sm:text-[12px]'>View my work
-                        <img className='absolute w-[70px]' src={linescratch} alt="" />
+                        <img className='absolute w-[70px]' loading='lazy' src={linescratch} alt="" />
                       </p>
                       <Lottie className='h-[50px] max-sm:h-[40px] ' animationData={rightarrow} loop={true}></Lottie>
                     </button>
@@ -95,8 +101,8 @@ function Home() {
                 </div>
               </motion.div>
 
-              {/* <div>
-                <OrbitingCircles>
+              <div className='h-full w-[400px]'>
+                {/* <OrbitingCircles>
                 <File />
                 <Settings />
                 <File />
@@ -106,9 +112,11 @@ function Home() {
                 <Settings />
                 <File />
                 <Search />
-              </OrbitingCircles>
+              </OrbitingCircles> */}
+              
+              <OrbitingCirclesDemo />
 
-              </div> */}
+              </div>
 
             </div>
 

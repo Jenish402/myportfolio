@@ -12,7 +12,7 @@ function LoadingScreen({ onFinish }) {
 
   return (
     <div className="loading-container">
-      <img src={jenishsoni} alt="loading" className="loading-image" />
+      <img src={jenishsoni} alt="loading" loading='lazy' className="loading-image" />
     </div>
   );
 }

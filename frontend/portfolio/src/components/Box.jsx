@@ -54,6 +54,7 @@ function Box({ closeIcon, handleClick, projectData = null }) {
                   src={data.images[currentImageIndex]} 
                   alt={`Project screenshot ${currentImageIndex + 1}`}
                   className="w-full h-full object-cover"
+                  loading='lazy'
                 />
               ) : (
                 <div className="text-gray-400 text-center p-4">

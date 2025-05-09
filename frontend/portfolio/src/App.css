@@ -111,7 +111,7 @@ html {
 }
 
 
-/* @keyframes orbit {
+@keyframes orbit {
   0% {
     transform: rotate(calc(var(--angle) * 1deg))
       translateY(calc(var(--radius) * 1px))
@@ -129,5 +129,5 @@ html {
 }
 .animation-direction-reverse {
   animation-direction: reverse;
-} */
+}
 

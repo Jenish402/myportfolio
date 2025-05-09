@@ -123,7 +123,7 @@ function Projects() {
                         whileInView={{ opacity: [0, 1], x: [-50, 0] }}
                         transition={{ duration: 0.7 }}
                         className='relative text-[50px] max-sm:text-[40px] koulen-font'>PROJECTS
-                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
+                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' loading='lazy' src={textline} alt="" />
                     </motion.h1>
                 </div>
                 <div className='flex items-center cursor-pointer' >
@@ -168,7 +168,7 @@ function Projects() {
                                         <p className='max-sm:text-[12px] AD-font'>{project.category}</p>
                                     </div>
                                     <div>
-                                        <img className='w-[70px] max-md:w-[40px] max-sm:hidden' src={linescratch} alt="Decorative line" />
+                                        <img className='w-[70px] max-md:w-[40px] max-sm:hidden' loading='lazy' src={linescratch} alt="Decorative line" />
                                     </div>
                                     <div className='flex items-center gap-x-[10px] max-sm:gap-x-[5px]'>
                                         <FaRegClock />
@@ -181,6 +181,7 @@ function Projects() {
                                         className='rounded-tl-[20px] h-[350px] object-cover rounded-tr-[20px] border-b-[5px] border-black' 
                                         src={project.thumbnail} 
                                         alt={project.title} 
+                                        loading='lazy'
                                     />
                                 </div>
                                 

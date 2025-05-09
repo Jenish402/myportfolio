@@ -1,12 +1,15 @@
 import './index.css';
 import './App.css';
-import Home from './pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import UnderConstruction from './pages/UnderConstruction';
-import { useState, useEffect } from 'react';
-import LoadingScreen from './components/LoadingScreen';
+import { useState, useEffect, Suspense, lazy } from 'react';
 
-function App() {
+// Lazy-loaded components
+const Home = lazy(() => import('./pages/Home'));
+const UnderConstruction = lazy(() => import('./pages/UnderConstruction'));
+const LoadingScreen = lazy(() => import('./components/LoadingScreen'));
+
+
+const App = () =>{
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -14,15 +17,23 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return <LoadingScreen onFinish={() => setLoading(false)} />;
+  if (loading) {
+    return (
+      <Suspense fallback={<div>Loading screen...</div>}>
+        <LoadingScreen onFinish={() => setLoading(false)} />
+      </Suspense>
+    );
+  }
 
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/underconstruction' element={<UnderConstruction />} />
-      </Routes>
-    </Router>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/underconstruction' element={<UnderConstruction />} />
+        </Routes>
+      </Router>
+    </Suspense>
   );
 }
 

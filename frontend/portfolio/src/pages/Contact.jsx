@@ -102,7 +102,7 @@ function Contact() {
                 whileInView={{opacity: [0, 1], x: [-50, 0] }}
                 transition={{ duration: 0.7 }}
                 className='relative text-[50px] max-sm:text-[40px] koulen-font'>CONTACT ME
-                    <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[0px]' src={textline} alt="" />
+                    <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[0px]' loading='lazy' src={textline} alt="" />
                 </motion.h1>
             </header>
 
@@ -112,7 +112,7 @@ function Contact() {
             className='education flex flex-col w-full p-[30px] border-[2px] border-black rounded-[50px] border-b-[20px] max-md:p-[15px]' aria-labelledby="say-hello-heading">
                 <div className='relative mb-[50px]'>
                     <h2 className='text-[40px] koulen-font'>SAY HELLO!</h2>
-                    <img className='absolute top-[-40px] right-[-30px] h-[130px] max-lg:h-[80px] max-2xl:h-[100px]' src={pinlogo} alt="Pin icon beside heading" />
+                    <img className='absolute top-[-40px] right-[-30px] h-[130px] max-lg:h-[80px] max-2xl:h-[100px]' loading='lazy' src={pinlogo} alt="Pin icon beside heading" />
                 </div>
                 <div className='flex gap-x-[20px] justify-between items-center max-md:flex-col-reverse max-md:gap-y-[50px]'>
                     <div className='w-[600px] max-lg:w-[400px] max-md:w-full max-2xl:w-[400px]'>
@@ -160,9 +160,9 @@ function Contact() {
                         </form>
                     </div>
                     <div className='relative'>
-                        <img className='h-fit w-[500px] border-[4px] border-black rounded-[40px] object-contain' src={contactimage} alt="Contact illustration" />
+                        <img className='h-fit w-[500px] border-[4px] border-black rounded-[40px] object-contain' loading='lazy' src={contactimage} alt="Contact illustration" />
                         <div>
-                            <img className='w-full absolute top-[-30px] items-center h-[70px]' src={taplogo} alt="Decorative tap logo" />
+                            <img className='w-full absolute top-[-30px] items-center h-[70px]' loading='lazy' src={taplogo} alt="Decorative tap logo" />
                         </div>
                     </div>
                 </div>

@@ -51,7 +51,7 @@ function About() {
                     whileInView={{opacity: [0, 1], x: [-50, 0] }}
                     transition={{ duration: 0.7 }}
                     className='relative text-[50px] max-sm:text-[40px] koulen-font'>ABOUT
-                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
+                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' loading='lazy' src={textline} alt="" />
                     </motion.h1>
                 </header>
 
@@ -59,14 +59,14 @@ function About() {
                 whileInView={{ opacity: [0, 1], y: [40, 0] }}
                 transition={{ duration: 0.7 }}
                 className='relative about flex flex-col gap-y-[50px] p-[20px] w-full rounded-[60px] border-l-[2px] border-t-[2px] border-r-[2px] border-b-[20px] max-sm:border-[1px] max-sm:border-b-[10px]'>
-                    <img className='absolute right-0 top-0 max-lg:h-[80px] max-2xl:h-[100px]' src={pinlogo} alt="Pin icon decoration" />
+                    <img className='absolute right-0 top-0 max-lg:h-[80px] max-2xl:h-[100px]' loading='lazy' src={pinlogo} alt="Pin icon decoration" />
                     <div className='flex justify-between gap-x-[30px] w-full max-sm:flex-col'>
                         <div className='bg-[#C9C5B5] h-[400px] rounded-[50px] flex items-center justify-center w-fit border-t-[2px] border-l-[2px] border-r-[2px] border-b-[20px] max-sm:border-b-[10px] max-sm:p-[0px]'>
-                            <img className='h-full w-full object-cover rounded-[30px] max-2xl:w-[400px] max-sm:w-[330px]' src={myphoto} alt="Profile photo of the developer" />
+                            <img className='h-full w-full object-cover rounded-[30px] max-2xl:w-[400px] max-sm:w-[330px]' loading='lazy' src={myphoto} alt="Profile photo of the developer" />
                         </div>
                         <div className='w-[800px] max-md:w-full max-sm:mt-[20px]'>
                             <h1 className='text-[50px] max-lg:text-[35px] max-sm:text-[30px] koulen-font'>WHO AM I ?</h1>
-                            <img className='mt-[20px] mb-[20px] max-lg:mt-[10px] max-lg:mb-[10px]' src={dottedline} alt="Dotted line separator" />
+                            <img className='mt-[20px] mb-[20px] max-lg:mt-[10px] max-lg:mb-[10px]' loading='lazy' src={dottedline} alt="Dotted line separator" />
                             <div className='text-justify AD-font'>
                                 <div>
                                     I am a dedicated AI Engineer and Full Stack Developer with a passion for solving real-world problems through technology. <br /> <br />
@@ -110,7 +110,7 @@ function About() {
                     whileInView={{opacity: [0, 1], x: [-50, 0] }}
                     transition={{ duration: 0.7 }}
                     className='relative text-[50px] max-sm:text-[40px] koulen-font'>SKILLS
-                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
+                        <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' loading='lazy' src={textline} alt="" />
                     </motion.h1>
                 </div>
 
@@ -135,38 +135,38 @@ function About() {
                                     <li
                                     className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Python</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={pythonlogo} alt="Python logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' loading='lazy' src={pythonlogo} alt="Python logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>TensorFlow</p>
                                         <div className='border-t-[7px] rounded-[30px]'>
-                                            <img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={tenserflowlogo} alt="Tenserflow logo" /></div>
+                                            <img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' loading='lazy' src={tenserflowlogo} alt="Tenserflow logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>PyTorch</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain py-[20px] px-[30px] max-sm:h-[100px]' src={pytorchlogo} alt="Pytorch logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain py-[20px] px-[30px] max-sm:h-[100px]' loading='lazy' src={pytorchlogo} alt="Pytorch logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Scikit-Learn</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={scikitlearnlogo} alt="Scikit Learn logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' loading='lazy' src={scikitlearnlogo} alt="Scikit Learn logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Pandas</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={pandaslogo} alt="Pandas logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' loading='lazy' src={pandaslogo} alt="Pandas logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>NumPy</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={numpylogo} alt="Numpy logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' loading='lazy' src={numpylogo} alt="Numpy logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Keras</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='rounded-[40px] h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={keraslogo} alt="Keras logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='rounded-[40px] h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' loading='lazy' src={keraslogo} alt="Keras logo" /></div>
                                     </li>
                                 </ul>
                             </div>
@@ -210,32 +210,32 @@ function About() {
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Node.js</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={nodejslogo} alt="Node.js logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' loading='lazy' src={nodejslogo} alt="Node.js logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>MongoDB</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={mongodblogo} alt="MongoDB logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' loading='lazy' src={mongodblogo} alt="MongoDB logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Express</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={expresslogo} alt="Express logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' loading='lazy' src={expresslogo} alt="Express logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>HTML/CSS</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={htmlcsslogo} alt="HTML/CSS logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' loading='lazy' src={htmlcsslogo} alt="HTML/CSS logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Tailwind</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={tailwindcsslogo} alt="TailwindCSS logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' loading='lazy' src={tailwindcsslogo} alt="TailwindCSS logo" /></div>
                                     </li>
 
                                     <li className='flex flex-col items-center border-[2px] border-b-[10px] rounded-[50px] max-w-[150px] max-sm:min-w-[100px] max-sm:rounded-[20px] flex-shrink-0'>
                                         <p className='text-[20px] pt-[10px] pb-[10px] max-sm:text-[17px] AD-font'>Next.js</p>
-                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' src={nextjslogo} alt="Next.js logo" /></div>
+                                        <div className='border-t-[7px] rounded-[30px]'><img className='h-[150px] w-auto object-contain p-[20px] max-sm:h-[100px]' loading='lazy' src={nextjslogo} alt="Next.js logo" /></div>
                                     </li>
                                 </ul>
                             </div>

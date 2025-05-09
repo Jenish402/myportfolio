@@ -24,11 +24,11 @@ function Education() {
                     whileInView={{ opacity: [0, 1], x: [-50, 0] }}
                     transition={{ duration: 0.7 }}
                     className='relative text-[50px] max-sm:text-[40px] koulen-font'>EDUCATION
-                    <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' src={textline} alt="" />
+                    <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' loading='lazy' src={textline} alt="" />
                 </motion.h1>
             </div>
             <div className=' relative education  w-full h-[650px] p-[20px] border-[2px] rounded-[50px] border-b-[20px] max-lg:h-[800px]'>
-                <img className='absolute right-0 top-0 max-lg:h-[80px] max-2xl:h-[100px]' src={pinlogo} alt="Pin decoration graphic" />
+                <img className='absolute right-0 top-0 max-lg:h-[80px] max-2xl:h-[100px]' loading='lazy' src={pinlogo} alt="Pin decoration graphic" />
                 <div className='relative top-[50px] left-[50%] h-[500px] w-[3px] bg-black max-lg:left-[5%] max-lg:h-[650px]'>
 
                     <motion.div

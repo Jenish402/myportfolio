@@ -124,16 +124,16 @@ function Footer() {
                 <div className='w-full flex flex-col items-end justify-between max-md:flex-row'>
                     <div className='flex items-center justify-center gap-x-[30px] max-md:mb-[0] max-lg:gap-x-[20px] max-md:gap-x-[10px]'>
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                            <img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' src={facebook} alt="Facebook logo" />
+                            <img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' loading='lazy' src={facebook} alt="Facebook logo" />
                         </a>
                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                            <img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' src={instagram} alt="Instagram logo" />
+                            <img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' loading='lazy' src={instagram} alt="Instagram logo" />
                         </a>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                            <img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' src={twitter} alt="Twitter logo" />
+                            <img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' loading='lazy' src={twitter} alt="Twitter logo" />
                         </a>
                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' src={linkedin} alt="LinkedIn logo" />
+                            <img className='h-[50px] w-auto max-lg:h-[35px] max-md:h-[28px]' loading='lazy' src={linkedin} alt="LinkedIn logo" />
                         </a>
                     </div>
                 </div>
