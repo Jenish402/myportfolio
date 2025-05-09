@@ -1,4 +1,3 @@
-// File: src/components/OrbitingCircles.js
 import React from "react";
 import { cn } from "@/lib/utils"; // Make sure this exists or replace with `clsx` or your utility function
 

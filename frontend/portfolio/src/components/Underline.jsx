@@ -1,4 +1,3 @@
-import React from 'react'
 import dottedline from '../assets/dottedline.webp'
 
 function Underline() {

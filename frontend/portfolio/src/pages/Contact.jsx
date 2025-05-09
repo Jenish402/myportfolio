@@ -3,7 +3,7 @@ import pinlogo from '../assets/pinlogo.webp'
 import contactimage from '../assets/contactimage.webp'
 import taplogo from '../assets/taplogo.webp'
 import textline from '../assets/textline.png'
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Contact() {
     // Initialize form data state

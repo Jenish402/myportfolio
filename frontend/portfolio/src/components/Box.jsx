@@ -5,10 +5,9 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 function Box({ closeIcon, handleClick, projectData = null }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Use default data if no project data is provided
   const data = projectData || {
     title: "Glint",
-    images: [], // This will be populated with actual images
+    images: [],
     description: "glint4u is a service-based tech startup offering web development, design, and scalable digital solutions. I designed and developed the official website glint4u.tech, showcasing the company's services, team, and portfolio. The site reflects a modern, responsive, and user-friendly interface aimed at attracting clients and building an online presence.",
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
     projectLink: "https://glint4u.tech",
@@ -37,7 +36,6 @@ function Box({ closeIcon, handleClick, projectData = null }) {
         transition={{ type: "spring", stiffness: 100 }}
         className="bg-white w-full overflow-y-scroll max-w-4xl rounded-lg overflow-hidden relative flex flex-col border-4 border-black max-sm:mt-[70px]"
       >
-        {/* Header with close button */}
         <div className="flex justify-between items-center p-4 border-b-2 border-black">
           <h2 className="text-2xl koulen-font">{data.title}</h2>
           <div 
@@ -48,9 +46,7 @@ function Box({ closeIcon, handleClick, projectData = null }) {
           </div>
         </div>
 
-        {/* Content */}
         <div className="flex flex-col md:flex-row p-4 gap-6">
-          {/* Image slider */}
           <div className="md:w-1/2 relative">
             <div className="h-64 md:h-80 border-2 border-black rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
               {data.images && data.images.length > 0 ? (
@@ -65,8 +61,7 @@ function Box({ closeIcon, handleClick, projectData = null }) {
                 </div>
               )}
             </div>
-            
-            {/* Navigation arrows */}
+
             {data.images && data.images.length > 1 && (
               <div className="flex justify-between absolute top-1/2 left-0 right-0 transform -translate-y-1/2 px-2">
                 <button
@@ -86,7 +81,6 @@ function Box({ closeIcon, handleClick, projectData = null }) {
               </div>
             )}
             
-            {/* Image counter */}
             {data.images && data.images.length > 1 && (
               <div className="text-center mt-2">
                 <p className="text-sm AD-font">
@@ -96,7 +90,6 @@ function Box({ closeIcon, handleClick, projectData = null }) {
             )}
           </div>
           
-          {/* Project details */}
           <div className="md:w-1/2">
             <div className="mb-4">
               <h3 className="text-lg font-bold mb-2 koulen-font">Description</h3>

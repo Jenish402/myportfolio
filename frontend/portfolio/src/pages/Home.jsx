@@ -15,8 +15,6 @@ import rightarrow from '../assets/right-arrow.json'
 import download from '../assets/download.json'
 import { motion } from 'framer-motion'
 import linescratch from '../assets/linescratch.webp'
-// import { OrbitingCircles } from "@/components/OrbitingCircles";
-// import { File, Settings, Search } from "lucide-react";
 
 function Home() {
 

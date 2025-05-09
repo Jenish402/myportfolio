@@ -5,7 +5,7 @@ import textline from '../assets/textline.png'
 import pinlogo from '../assets/pinlogo.webp'
 import Lottie from 'lottie-react';
 import graduate from '../assets/graduate.json'
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 function Education() {
@@ -28,7 +28,6 @@ function Education() {
                 </motion.h1>
             </div>
             <div className=' relative education  w-full h-[650px] p-[20px] border-[2px] rounded-[50px] border-b-[20px] max-lg:h-[800px]'>
-                {/* <Lottie className='absolute h-[800px] top-[-100px] left-[250px] opacity-10' animationData={education} loop={true}></Lottie> */}
                 <img className='absolute right-0 top-0 max-lg:h-[80px] max-2xl:h-[100px]' src={pinlogo} alt="Pin decoration graphic" />
                 <div className='relative top-[50px] left-[50%] h-[500px] w-[3px] bg-black max-lg:left-[5%] max-lg:h-[650px]'>
 
@@ -123,7 +122,6 @@ function Education() {
                                 <p className='hidden max-md:block AD-font max-sm:text-[13px]'>(2021-2025)</p>
                             </div>
                             <h3 className='text-[22px] AD-font max-sm:text-[18px]'>Silver Oak University</h3>
-                            {/* <h3 className='text-[22px] AD-font hidden max-md:block '>Silver Oak <br /> University</h3> */}
                             <p className='AD-font'>CGPA = 9.4</p>
                         </div>
                         <div>
