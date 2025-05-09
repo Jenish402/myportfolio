@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, Suspense, lazy } from 'react';
+import React, { lazy } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
@@ -9,11 +9,8 @@ import underline from '../assets/underline.svg';
 import rightarrow from '../assets/right-arrow.json';
 import download from '../assets/download.json';
 import linescratch from '../assets/linescratch.webp';
-// import { OrbitingCircles } from '../components/OrbitingCircles';
 import {OrbitingCirclesDemo} from '../components/OrbitingCirclesDemo';
-// import { File,Search, Settings } from 'lucide-react';
 
-// Lazy-loaded components
 const Navbar = lazy(() => import('../components/Navbar'));
 const Underline = lazy(() => import('../components/Underline'));
 const About = lazy(() => import('./About'));
@@ -49,7 +46,7 @@ function Home() {
 
         <main className='main-right-container flex-1 flex-col h-screen w-full overflow-y-auto pl-[20px] pr-[20px] pb-[20px]'>
           {/* Hero section */}
-          <section id='hero' className='min-h-screen flex flex-col'>
+          <section id='hero' className='flex flex-col'>
             <div className='mb-[50px] max-md:mb-[0px] max-2xl:mb-[40px]'>
               <h1 className='pt-[70px] text-[25px] max-md:pt-[30px] AD-font'>
                 Welcome to my portfolio
@@ -57,7 +54,7 @@ function Home() {
               </h1>
             </div>
 
-            <div className='flex w-full items-center justify-between max-lg:flex-col max-lg:gap-y-[30px] max-lg:gap-x-[40px] max-lg:items-start max-md:items-center max-md:justify-center'>
+            <div className='flex w-full items-center justify-between gap-x-[20px] max-lg:flex-col max-lg:gap-y-[30px] max-lg:gap-x-[40px] max-lg:items-start max-md:items-center max-md:justify-center'>
               <motion.div
                 whileInView={{ opacity: [0, 1], x: [-50, 0] }}
                 transition={{ duration: 0.7 }}
@@ -102,22 +99,8 @@ function Home() {
               </motion.div>
 
               <div className='h-full w-[400px]'>
-                {/* <OrbitingCircles>
-                <File />
-                <Settings />
-                <File />
-              </OrbitingCircles>
-              <OrbitingCircles radius={100} reverse>
-                <File />
-                <Settings />
-                <File />
-                <Search />
-              </OrbitingCircles> */}
-              
               <OrbitingCirclesDemo />
-
               </div>
-
             </div>
 
             {/* Divider section line */}
