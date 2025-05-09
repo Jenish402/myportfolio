@@ -27,13 +27,7 @@
   }
 
 nav {
-    background-image: url('./assets/navbackgroundd.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.nav {
-    background-image: url('./assets/navbackgroundd.png');
+    background-image: url('./assets/navbackgroundd.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -47,19 +41,19 @@ nav {
 }
 
 .main-right-container{
-    background-image: url('./assets/herobackground.png');
+    background-image: url('./assets/herobackground.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .about{
-    background-image: url('./assets/squrebackground.png');
+    background-image: url('./assets/squrebackground.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .education{
-    background-image: url('./assets/timelinebackground.png');
+    background-image: url('./assets/timelinebackground.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -116,4 +110,24 @@ html {
   display: none;             /* Chrome, Safari and Opera */
 }
 
+
+/* @keyframes orbit {
+  0% {
+    transform: rotate(calc(var(--angle) * 1deg))
+      translateY(calc(var(--radius) * 1px))
+      rotate(calc(var(--angle) * -1deg));
+  }
+  100% {
+    transform: rotate(calc(var(--angle) * 1deg + 360deg))
+      translateY(calc(var(--radius) * 1px))
+      rotate(calc((var(--angle) * -1deg) - 360deg));
+  }
+}
+
+.animate-orbit {
+  animation: orbit calc(var(--duration) * 1s) linear infinite;
+}
+.animation-direction-reverse {
+  animation-direction: reverse;
+} */
 

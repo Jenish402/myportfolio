@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react'
-import facebook from '../assets/facebook.png'
-import instagram from '../assets/instagram.png'
-import twitter from '../assets/twitter.png'
-import linkedin from '../assets/linkedin.png'
+import facebook from '../assets/facebook.svg'
+import instagram from '../assets/instagram.svg'
+import twitter from '../assets/twitter.webp'
+import linkedin from '../assets/linkedin.svg'
 
 function Footer() {
 

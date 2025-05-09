@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
-import pinlogo from '../assets/pinlogo.png'
-import contactimage from '../assets/contactimage.png'
-import taplogo from '../assets/taplogo.png'
+import pinlogo from '../assets/pinlogo.webp'
+import contactimage from '../assets/contactimage.webp'
+import taplogo from '../assets/taplogo.webp'
 import textline from '../assets/textline.png'
 import { motion, useScroll, useTransform } from "framer-motion";
 

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Typewriter } from 'react-simple-typewriter';
 import { Helmet } from 'react-helmet'
 import Navbar from '../components/Navbar'
-import underline from '../assets/underline.png'
+import underline from '../assets/underline.svg'
 import Underline from '../components/Underline'
 import About from './About'
 import Education from './Education'
@@ -12,16 +12,13 @@ import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
 import Lottie from 'lottie-react'
 import rightarrow from '../assets/right-arrow.json'
-import musiccircle from '../assets/musiccircle.json'
 import download from '../assets/download.json'
 import { motion } from 'framer-motion'
-import linescratch from '../assets/linescratch.png'
+import linescratch from '../assets/linescratch.webp'
+// import { OrbitingCircles } from "@/components/OrbitingCircles";
+// import { File, Settings, Search } from "lucide-react";
 
 function Home() {
-
-  const audioRef = useRef(null);
-  const [hasInteracted, setHasInteracted] = useState(false);
-
 
   return (
     <div className='w-full h-screen flex overflow-hidden fixed scroll-smooth'>
@@ -56,7 +53,7 @@ function Home() {
               </h1>
             </div>
 
-            <div className='flex flex-1 w-full items-center justify-between max-md:flex-col-reverse max-lg:gap-y-[30px] max-lg:gap-x-[40px] max-lg:items-start max-md:items-center max-md:justify-center'>
+            <div className='flex w-full items-center justify-between max-md:flex-col-reverse max-lg:gap-y-[30px] max-lg:gap-x-[40px] max-lg:items-start max-md:items-center max-md:justify-center'>
               <motion.div
                 whileInView={{ opacity: [0, 1], x: [-50, 0] }}
                 transition={{ duration: 0.7 }}
@@ -100,9 +97,21 @@ function Home() {
                 </div>
               </motion.div>
 
-              <div className='relative flex flex-col items-center '>
-                <Lottie animationData={musiccircle} loop={true}></Lottie>
-              </div>
+              {/* <div>
+                <OrbitingCircles>
+                <File />
+                <Settings />
+                <File />
+              </OrbitingCircles>
+              <OrbitingCircles radius={100} reverse>
+                <File />
+                <Settings />
+                <File />
+                <Search />
+              </OrbitingCircles>
+
+              </div> */}
+
             </div>
 
             {/* Divider section line */}

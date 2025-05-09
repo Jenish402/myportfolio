@@ -1,5 +1,5 @@
 import React from 'react'
-import dottedline from '../assets/dottedline.png'
+import dottedline from '../assets/dottedline.webp'
 
 function Underline() {
     return (

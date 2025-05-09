@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet';
 import { BiSolidLeftArrow, BiSolidRightArrow } from "react-icons/bi";
 import textline from '../assets/textline.png'
-import pinlogo from '../assets/pinlogo.png'
+import pinlogo from '../assets/pinlogo.webp'
 import Lottie from 'lottie-react';
 import graduate from '../assets/graduate.json'
 import { motion, useScroll, useTransform } from "framer-motion";

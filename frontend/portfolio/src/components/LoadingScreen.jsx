@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import jenishsoni from '../assets/jenishsoni.png';
+import jenishsoni from '../assets/jenishsoni.svg';
 
 function LoadingScreen({ onFinish }) {
   useEffect(() => {
