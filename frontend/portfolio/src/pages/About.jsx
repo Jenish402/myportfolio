@@ -114,7 +114,7 @@ function About() {
                     </motion.h1>
                 </div>
 
-                <div className='flex flex-col w-full gap-y-[10px]'>
+                <div className='flex flex-col w-full gap-y-[25px]'>
                     <div><h3 className='text-[25px] koulen-font'>AI & ML Skills:</h3></div>
                     <div className='flex flex-col gap-y-[30px] w-full'>
                         {/* AI & ML Skills Carousel */}

@@ -47,7 +47,7 @@ function Home() {
         <main className='main-right-container flex-1 flex-col h-screen w-full overflow-y-auto pl-[20px] pr-[20px] pb-[20px]'>
           {/* Hero section */}
           <section id='hero' className='flex flex-col'>
-            <div className='mb-[50px] max-md:mb-[0px] max-2xl:mb-[40px]'>
+            <div className='mb-[50px] max-md:mb-[30px] max-2xl:mb-[40px]'>
               <h1 className='pt-[70px] text-[25px] max-md:pt-[30px] AD-font'>
                 Welcome to my portfolio
                 <img className='h-auto w-[150px]' loading='lazy' src={underline} alt="Stylish underline graphic" />
@@ -58,8 +58,8 @@ function Home() {
               <motion.div
                 whileInView={{ opacity: [0, 1], x: [-50, 0] }}
                 transition={{ duration: 0.7 }}
-                className='flex flex-col w-[700px] gap-y-[50px] max-lg:w-[500px] max-md:gap-y-[30px] max-md:w-full max-2xl:gap-y-[30px]'>
-                <h1 className='flex gap-x-[10px] text-[50px] max-lg:text-[35px] AD-font max-sm:text-[30px] max-2xl:text-[40px]'><p>Hi, I'm</p>
+                className='flex flex-col w-[700px] gap-y-[50px] max-lg:w-[500px] max-sm:gap-y-[10px] max-md:gap-y-[30px] max-md:w-full max-2xl:gap-y-[30px]'>
+                <h1 className='flex gap-x-[10px] text-[50px] max-lg:text-[35px] AD-font max-sm:text-[25px] max-2xl:text-[40px]'><p>Hi, I'm</p>
                   <Typewriter
                     words={["JENISH SONI 👋", "AI Engineer", "Web Developer", "Tech Enthusiast"]}
                     loop={0}

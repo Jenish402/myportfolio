@@ -27,9 +27,9 @@ function Education() {
                     <img className='absolute bottom-[5px] left-[-5px] max-sm:bottom-[10px] max-sm:w-[100px]' loading='lazy' src={textline} alt="" />
                 </motion.h1>
             </div>
-            <div className=' relative education  w-full h-[650px] p-[20px] border-[2px] rounded-[50px] border-b-[20px] max-lg:h-[800px]'>
+            <div className='relative education  w-full h-[650px] p-[20px] border-[2px] rounded-[50px] border-b-[20px] max-lg:h-[800px]'>
                 <img className='absolute right-0 top-0 max-lg:h-[80px] max-2xl:h-[100px]' loading='lazy' src={pinlogo} alt="Pin decoration graphic" />
-                <div className='relative top-[50px] left-[50%] h-[500px] w-[3px] bg-black max-lg:left-[5%] max-lg:h-[650px]'>
+                <div className=' relative top-[50px] left-[50%] h-[500px] w-[3px] bg-black max-lg:left-[5%] max-lg:h-[650px]'>
 
                     <motion.div
                         initial={{ opacity: 0, scale: 0 }}
@@ -67,7 +67,7 @@ function Education() {
                     <motion.article
                         whileInView={{ opacity: [0, 1], x: [100, -10] }}
                         transition={{ duration: 0.5 }}
-                        className=' flex gap-x-[20px] justify-between p-[10px] absolute top-[20px] right-[-350px] border-[1.5px] border-r-[5px] w-fit h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-lg:top-[55px] max-sm:w-[200px] max-sm:left-[60px]'><BiSolidLeftArrow className='absolute left-[-27px] top-[55px]' size={35} />
+                        className=' flex gap-x-[20px] justify-between p-[10px] absolute top-[20px] right-[-350px] border-[1.5px] border-r-[5px] w-fit h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-lg:top-[55px] max-sm:w-[200px] max-sm:left-[60px] eduBox max-sm:gap-x-0'><BiSolidLeftArrow className='absolute left-[-27px] top-[55px]' size={35} />
 
 
                         <div className='flex flex-col'>
@@ -90,7 +90,7 @@ function Education() {
                     <motion.article
                         whileInView={{ opacity: [0, 1], x: [-100, 10] }}
                         transition={{ duration: 1 }}
-                        className=' flex gap-x-[20px] justify-between p-[10px] absolute top-[150px] left-[-360px] border-[1.5px] border-r-[5px] w-fit h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-lg:w-[309px] max-md:w-[230px] max-sm:w-[210px] max-lg:top-[250px] max-sm:left-[40px]'><BiSolidRightArrow className='absolute right-[-27px] top-[55px] max-lg:hidden' size={35} />
+                        className=' flex gap-x-[20px] justify-between p-[10px] absolute top-[150px] left-[-360px] border-[1.5px] border-r-[5px] w-fit h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-lg:w-[309px] max-md:w-[230px] max-sm:w-[210px] max-lg:top-[250px] max-sm:left-[40px] eduBox max-sm:gap-x-0'><BiSolidRightArrow className='absolute right-[-27px] top-[55px] max-lg:hidden' size={35} />
                         <BiSolidLeftArrow className='absolute left-[-27px] top-[55px] hidden max-lg:block' size={35} />
                         <div className='flex flex-col'>
                             <div className='mb-[15px]'>
@@ -112,7 +112,7 @@ function Education() {
                     <motion.article
                         whileInView={{ opacity: [0, 1], x: [100, 0] }}
                         transition={{ duration: 1 }}
-                        className=' flex gap-x-[20px] justify-between p-[10px] absolute bottom-[50px] right-[-390px] border-[1.5px] border-r-[5px] w-fit h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-lg:bottom-[55px] max-md:h-[180px] max-md:w-[210px] max-md:bottom-[25px]'><BiSolidLeftArrow className='absolute left-[-27px] top-[55px]' size={35} />
+                        className=' flex gap-x-[20px] justify-between p-[10px] absolute bottom-[50px] right-[-390px] border-[1.5px] border-r-[5px] w-fit h-[150px] rounded-[20px] border-b-[10px] max-lg:left-[50px] max-lg:bottom-[55px] max-md:h-[180px] max-md:w-[210px] max-md:bottom-[25px] eduBox max-sm:gap-x-0'><BiSolidLeftArrow className='absolute left-[-27px] top-[55px]' size={35} />
                         <div className='flex flex-col w-fit'>
                             <div className='mb-[15px]'>
                                 <div className='flex gap-x-[10px]'>

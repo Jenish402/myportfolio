@@ -101,7 +101,7 @@ function Footer() {
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
-                                className='outline-none AD-font w-[500px] bg-transperent border-[2px] border-black text-[20px] p-[10px] rounded-tl-[15px] rounded-bl-[15px] max-lg:w-[300px] max-sm:w-[180px] max-2xl:w-[400px]' type="email" placeholder='E-mail' aria-label="Email address" />
+                                className='outline-none AD-font w-[500px] bg-transperent border-[2px] border-black text-[20px] p-[10px] rounded-tl-[15px] rounded-bl-[15px] max-lg:w-[300px] max-sm:w-[180px] max-2xl:w-[400px] emailBox' type="email" placeholder='E-mail' aria-label="Email address" />
                             <button type='submit' className='koulen-font bg-[#D9D981] text-[25px] px-[40px] border-[2px] rounded-tr-[15px] rounded-br-[15px]'>send</button>
                         </form>
                     </div>

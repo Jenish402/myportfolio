@@ -178,10 +178,11 @@ function Projects() {
 
                                 <div>
                                     <img 
-                                        className='rounded-tl-[20px] h-[350px] object-cover rounded-tr-[20px] border-b-[5px] border-black' 
+                                        className='cursor-pointer rounded-tl-[20px] h-[350px] object-cover rounded-tr-[20px] border-b-[5px] border-black' 
                                         src={project.thumbnail} 
                                         alt={project.title} 
                                         loading='lazy'
+                                        onClick={() => openPopup(project.id)}
                                     />
                                 </div>
                                 

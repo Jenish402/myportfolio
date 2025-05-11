@@ -131,3 +131,12 @@ html {
   animation-direction: reverse;
 }
 
+@media(max-width:350px){
+  .eduBox{
+    width: 170px;
+  }
+  .emailBox{
+    width: 150px;
+  }
+  
+}
